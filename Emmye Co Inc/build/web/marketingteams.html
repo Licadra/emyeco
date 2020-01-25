@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Emy CO Marketing</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/w3.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+      
+        <link href="css1/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+          <link href="css1/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+          <link href="css1/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+          <link href="css1/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+          <link href="css1/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
+          <link href="css1/theme-gunmetal.css" rel="stylesheet" type="text/css" media="all" />
+          <link href="css1/custom.css" rel="stylesheet" type="text/css" media="all" />
+          <link href="https://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600" rel="stylesheet" type="text/css">
+          <link rel="apple-touch-icon" sizes="57x57" href="img1/favicon/apple-icon-57x57.png">
+          <link rel="stylesheet" href="w3.css">
+          <link rel="stylesheet" href="css/w3-theme-red.css">
+
+      
+        
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <style>
+        body {
+            font: 400 15px Lato, sans-serif;
+            line-height: 1.8;
+            color: #818181;
+        }
+        h2 {
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #303030;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        h4 {
+            font-size: 19px;
+            line-height: 1.375em;
+            color: #303030;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }  
+        .jumbotron {
+            background-color: #f4511e;
+            color: #fff;
+            padding: 100px 25px;
+            font-family: Montserrat, sans-serif;
+        }
+        .container-fluid {
+            padding: 60px 50px;
+        }
+        .bg-grey {
+            background-color: #f6f6f6;
+        }
+        .logo-small {
+            color: #f4511e;
+            font-size: 50px;
+        }
+        .logo {
+            color: #f4511e;
+            font-size: 200px;
+        }
+        .thumbnail {
+            padding: 0 0 15px 0;
+            border: none;
+            border-radius: 0;
+        }
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 10px;
+        }
+        .carousel-control.right, .carousel-control.left {
+            background-image: none;
+            color: #f4511e;
+        }
+        .carousel-indicators li {
+            border-color: #f4511e;
+        }
+        .carousel-indicators li.active {
+            background-color: #f4511e;
+        }
+        .item h4 {
+            font-size: 19px;
+            line-height: 1.375em;
+            font-weight: 400;
+            font-style: italic;
+            margin: 70px 0;
+        }
+        .item span {
+            font-style: normal;
+        }
+        .panel {
+            border: 1px solid #f4511e; 
+            border-radius:0 !important;
+            transition: box-shadow 0.5s;
+        }
+        .panel:hover {
+            box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+        }
+        .panel-footer .btn:hover {
+            border: 1px solid #f4511e;
+            background-color: #fff !important;
+            color: #f4511e;
+        }
+        .panel-heading {
+            color: #fff !important;
+            background-color: #f4511e !important;
+            padding: 25px;
+            border-bottom: 1px solid transparent;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+        .panel-footer {
+            background-color: white !important;
+        }
+        .panel-footer h3 {
+            font-size: 32px;
+        }
+        .panel-footer h4 {
+            color: #aaa;
+            font-size: 14px;
+        }
+        .panel-footer .btn {
+            margin: 15px 0;
+            background-color: #f4511e;
+            color: #fff;
+        }
+        .navbar {
+            margin-bottom: 0;
+            background-color: #f4511e;
+            z-index: 9999;
+            border: 0;
+            font-size: 12px !important;
+            line-height: 1.42857143 !important;
+            letter-spacing: 4px;
+            border-radius: 0;
+            font-family: Montserrat, sans-serif;
+        }
+        .navbar li a, .navbar .navbar-brand {
+            color: #fff !important;
+        }
+        .navbar-nav li a:hover, .navbar-nav li.active a {
+            color: #f4511e !important;
+            background-color: #fff !important;
+        }
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+            color: #fff !important;
+        }
+        footer .glyphicon {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #f4511e;
+        }
+        .slideanim {visibility:hidden;}
+        .slide {
+            animation-name: slide;
+            -webkit-animation-name: slide;
+            animation-duration: 1s;
+            -webkit-animation-duration: 1s;
+            visibility: visible;
+        }
+        @keyframes slide {
+          0% {
+            opacity: 0;
+            -webkit-transform: translateY(70%);
+          } 
+          100% {
+            opacity: 1;
+            -webkit-transform: translateY(0%);
+          }
+        }
+        @-webkit-keyframes slide {
+          0% {
+            opacity: 0;
+            -webkit-transform: translateY(70%);
+          } 
+          100% {
+            opacity: 1;
+            -webkit-transform: translateY(0%);
+          }
+        }
+        @media screen and (max-width: 768px) {
+          .col-sm-4 {
+            text-align: center;
+            margin: 25px 0;
+          }
+          .btn-lg {
+              width: 100%;
+              margin-bottom: 35px;
+          }
+        }
+        @media screen and (max-width: 480px) {
+          .logo {
+              font-size: 150px;
+          }
+        }
+        </style>
+      
+          <style>
+      
+          body, html {
+            height: 100%;
+            margin:auto;
+            padding:0;
+            }
+      
+      
+       #example {
+        background-color: #333;
+        height: 600px;
+        height: 600px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        resize: both;
+        position: relative;
+        z-index: 1;
+      }
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+      
+      
+      
+            .parallax-image-1 {
+      
+               /* The image used */
+            background-image: url('img1/index/blackened_catfish_credit_chris_wessling.jpg');
+            /* Full height */
+            height: 100%;
+            width: 100%;
+            margin: auto;
+            padding: 0;
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            }
+            .parallax-image-2 {
+      
+               /* The image used */
+            background-image: url('img1/index/john_e_carson_hotel_courtyard.jpg');
+            /* Full height */
+            height: 100%;
+            width: 100%;
+            margin: auto;
+            padding: 0;
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            }
+      
+      
+            .parallax-image-3 {
+      
+               /* The image used */
+            background-image: url('img1/index/wok_charred_edamame_food_photographer_chris_wessling.jpg');
+            /* Full height */
+            height: 100%;
+            width: 100%;
+            margin: auto;
+            padding: 0;
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            }
+      
+            .parallax-image-4 {
+      
+               /* The image used */
+            background-image: url('img1/index/carson_kitchen_patio.jpg');
+            /* Full height */
+            height: 100%;
+            width: 100%;
+            margin: auto;
+            padding: 0;
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            }
+      
+            .parallax {
+            /* The image used */
+            background-image: url('img1/index/carson_kitchen_main_dining.jpg');
+            /* Full height */
+            height: 100%;
+            width: 100%;
+            margin: auto;
+            padding: 0;
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+           }
+      
+               .heading {
+                color: white;
+                text-align: center;
+                padding-top: 200px;
+             }
+      
+              .li{
+                list-style:none;
+                float: left;
+              }
+              #menu_btn{
+                display:none;
+                text-align:center;
+              }
+              #menu_btn:hover{
+                cursor:pointer;
+              }
+              #nav-ul{
+                display:block;
+                overflow:auto;
+              }
+              .nav-ul-li{
+                display:inline;
+              }
+              .nav-ul-li-a{
+                float: right;
+                display:block;
+                margin: auto;
+              }
+      
+      
+              div.img {
+          border: 1px solid #ccc;
+      }
+      
+      div.img:hover {
+          border: 1px solid #777;
+      }
+      
+      div.img img {
+          width: 100%;
+          height: auto;
+      }
+      
+      div.desc {
+          padding: 15px;
+          text-align: center;
+      }
+      
+      * {
+          box-sizing: border-box;
+      }
+      
+      .responsive {
+          padding: 0 6px;
+          float: left;
+          width: 24.99999%;
+      }
+      
+      @media only screen and (max-width: 700px){
+          .responsive {
+              width: 49.99999%;
+              margin: 6px 0;
+          }
+      }
+      
+      @media only screen and (max-width: 500px){
+          .responsive {
+              width: 100%;
+          }
+      }
+      
+      
+      
+      
+      
+             @media only screen and (max-width:992px){
+               #menu_btn{
+                  display:block;
+                }
+                .nav-ul-hide{
+                  display:none;
+                }
+                .nav-ul-li-bl{
+                  display:block;
+                }
+                .nav-ul-li-a-no{
+                  float:none;
+                  margin:auto;
+                }
+            }
+      
+            @media only screen and (min-width: 992px){
+                .nav-ul-show {
+                  display: block!important;
+                }
+            }
+      
+      
+        #photos {
+        /* Prevent vertical gaps */
+        line-height: 0;
+         
+        -webkit-column-count: 5;
+        -webkit-column-gap:   0px;
+        -moz-column-count:    5;
+        -moz-column-gap:      0px;
+        column-count:         5;
+        column-gap:           0px;  
+      }
+      
+      #photos img {
+        /* Just in case there are inline attributes */
+        width: 100% !important;
+        height: auto !important;
+      }
+      
+      
+      @media (max-width: 1200px) {
+        #photos {
+        -moz-column-count:    4;
+        -webkit-column-count: 4;
+        column-count:         4;
+        }
+      }
+      @media (max-width: 1000px) {
+        #photos {
+        -moz-column-count:    3;
+        -webkit-column-count: 3;
+        column-count:         3;
+        }
+      }
+      @media (max-width: 800px) {
+        #photos {
+        -moz-column-count:    2;
+        -webkit-column-count: 2;
+        column-count:         2;
+        }
+      }
+      @media (max-width: 400px) {
+        #photos {
+        -moz-column-count:    1;
+        -webkit-column-count: 1;
+        column-count:         1;
+        }
+      }
+      
+          </style>
+          
+          
+          <link rel="stylesheet" href="bootstrap.min.css">
+          
+          <script src="jquery.min.js"></script>
+          <script src="bootstrap.min.js"></script>
+          <link rel="stylesheet" href="index2.css"> 
+          <script src="index2.js"></script>
+          <script src="https://maps.googleapis.com/maps/api/js"></script>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+          <style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Lato", sans-serif}
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-tag {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+          </style>
+          
+      
+      
+      
+      </head>
+
+
+
+
+<body>
+
+<!-- Navbar -->
+<div class="container nav-container" style="margin: auto;height: auto;width: auto; background-color: transparent"> 
+     
+    <section class="navbar navbar-default navbar-fixed-top" id="top" style="margin: auto;height: auto;width: auto;background-color:transparent">
+     <nav class="navbar navbar-fixed-top" style="margin: auto;width: auto;height: auto">
+
+      <section style="list-style-type: none;padding: 0;margin:auto; float: left; height: auto; width: auto;background-color: transparent">
+        <div class="col-md-6 p0 image" style="height:auto;width: auto;background-color:transparent">
+         
+          <div class="" style=" margin: auto;height: auto;width: auto;background-color: transparent">
+            <a class="navbar-header navbar-brand" style="margin:auto; display: inline; background-color: transparent" href="index.html">        
+            Emy<strong style=""> Co</strong>
+            </a>
+          </div>   
+                  
+        </div>
+      </section>
+
+      <section style="margin:auto; float: right;width: auto; height: auto">
+
+       <div style="margin: auto;width: auto; height: auto;float: right;" class="module widget-handle mobile-toggle right visible-sm visible-xs">
+         <i class="navbar-brand ti-menu" herf="#" id="menu_btn"></i>
+         
+<script>
+  $('#menu_btn').click(function(){
+    $('nav ul').slideToggle();
+  })
+</script>
+       </div>
+
+       
+
+      </section>
+
+
+      <div class="" style="list-style-type: none;margin:auto; float: right; height: auto;width: auto; background-color: transparent">
+        <section>
+           <ul class=" nav-ul-hide nav-ul-show"  style="margin:auto; float: right; height: auto;width: auto; background-color: transparent">
+             <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="index.html">Home</a></li>
+             <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="index.html#location">Location</a></li>
+             <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="index.html#about">About</a></li>
+             <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="index.html#services">Services</a></li>
+             <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="index.html#contact">Contact</a></li>
+             <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="https://www.facebook.com/Emy CO/"><i class="ti-facebook"></i></a></li>
+             <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="https://twitter.com/Emy CO"><i class="ti-twitter-alt"></i></a></li>
+             <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="https://www.instagram.com/Emy CO/?hl=en"><i class="ti-instagram"></i></a></li>
+           </ul> 
+        </section>         
+      </div>
+
+     </nav>
+    </section>
+
+ </div> 
+
+<!-- Content -->
+<div class="w3-content w3-container" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+  <div class="w3-section">
+    <h1><b>MARKETING</b></h1>
+    <p>Done by Emy CO</p>
+  </div>
+
+  <!-- Slideshow -->
+  <div class="w3-display-container mySlides">
+    <img src="img/img_coffee.jpg" style="width:100%">
+    <div class="w3-display-topleft w3-text-white w3-container w3-padding-32 w3-hide-small">
+      <span class="w3-white w3-padding-large w3-animate-bottom">Lorem ipsum</span>
+    </div>
+  </div>
+  <div class="w3-display-container mySlides">
+    <img src="img/img_workbench.jpg" style="width:100%">
+    <div class="w3-display-middle w3-text-white w3-container w3-padding-32 w3-hide-small">
+      <span class="w3-white w3-padding-large w3-animate-bottom">Lorem ipsum hipsum</span>
+    </div>
+  </div>
+  <div class="w3-display-container mySlides">
+    <img src="img/img_sound.jpg" style="width:100%">
+    <div class="w3-display-topright w3-text-white w3-container w3-padding-32 w3-hide-small">
+      <span class="w3-white w3-padding-large w3-animate-bottom">Lorem ipsum hipsum</span>
+    </div>
+  </div>
+
+  <!-- Slideshow next/previous buttons -->
+  <div class="w3-container w3-dark-grey w3-padding-8">
+    <div class="w3-left w3-hover-text-teal w3-large" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-teal w3-large" onclick="plusDivs(1)">&#10095;</div>
+
+    <div class="w3-center">
+      <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+      <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+      <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    </div>
+  </div>
+
+  <!-- Grid -->
+  <div class="w3-row">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">What We Offer</span>
+    </div>
+    <div class="w3-col l3 m6 w3-light-grey w3-padding-large">
+      <h3>Design</h3>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-grey w3-padding-large">
+      <h3>Branding</h3>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-dark-grey w3-padding-large">
+      <h3>Consultation</h3>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-black w3-padding-large">
+      <h3>Promises</h3>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+    </div>
+  </div>
+
+  <!-- Grid -->
+  <div class="w3-row-padding" style="margin:0 -16px">
+    <div class="w3-center w3-padding-64">
+      <h3>Pricing Plans</h3>
+      <p>Choose a pricing plan that fits your needs.</p>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-black">
+          <p class="w3-xlarge">Basic</p>
+        </li>
+        <li class="w3-padding-16"><b>10GB</b> Storage</li>
+        <li class="w3-padding-16"><b>10</b> Emails</li>
+        <li class="w3-padding-16"><b>10</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 10</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-btn w3-green w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-dark-grey">
+          <p class="w3-xlarge">Pro</p>
+        </li>
+        <li class="w3-padding-16"><b>25GB</b> Storage</li>
+        <li class="w3-padding-16"><b>25</b> Emails</li>
+        <li class="w3-padding-16"><b>25</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 25</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-btn w3-green w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-black">
+          <p class="w3-xlarge">Premium</p>
+        </li>
+        <li class="w3-padding-16"><b>50GB</b> Storage</li>
+        <li class="w3-padding-16"><b>50</b> Emails</li>
+        <li class="w3-padding-16"><b>50</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 50</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-btn w3-green w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Grid -->
+  <div class="w3-row-padding" style="margin:0 -16px">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Who We Are</span>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="img/img_avatar1.png" alt="Norway" style="width:100%">
+        <div class="w3-container">
+          <h3>John Doe</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-btn">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="img/img_avatar3.png" alt="Norway" style="width:100%">
+        <div class="w3-container">
+          <h3>Mike Ross</h3>
+          <p class="w3-opacity">Art Director</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-btn">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="img/img_avatar6.png" alt="Norway" style="width:100%">
+        <div class="w3-container">
+          <h3>Jane Doe</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-btn">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="w3-center w3-padding-64">
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
+  </div>
+
+  <form>
+    <div class="w3-group">
+      <label>Name</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text">
+    </div>
+    <div class="w3-group">
+      <label>Name</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text">
+    </div>
+    <div class="w3-group">
+      <label>Subject</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;">
+    </div>
+    <button type="button" class="w3-btn w3-btn-block w3-padding-12">Send</button>
+  </form>
+
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+  <h4>Footer</h4>
+  <p>Powered by <a href="index.html" target="_blank">Emy CO</a></p>
+</footer>
+
+<script>
+// Slideshow script
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/w3css/tryw3css_templates_marketing.htm by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Jul 2016 00:34:17 GMT -->
+</html>

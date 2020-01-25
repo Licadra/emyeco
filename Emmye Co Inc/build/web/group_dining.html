@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>Carssars Kitchen </title>
+    <meta name="description" content="Downtown Las Vegas neighborhood urban dining located at 6th St. &amp; Carson Ave., in the historic John E. Carson Hotel.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">    
+    
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/theme-gunmetal.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600" rel="stylesheet" type="text/css">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="img/favicon/manifest.json">
+    
+    <style>
+    body, html {
+      height: 100%;
+      margin:auto;
+      padding:0;
+      }
+
+      .parallax-image-1 {
+
+         /* The image used */
+      background-image: url('img/index/blackened_catfish_credit_chris_wessling.jpg');
+      /* Full height */
+      height: 100%;
+      width: 100%;
+      margin: auto;
+      padding: 0;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+      }
+      .parallax-image-2 {
+
+         /* The image used */
+      background-image: url('img/index/john_e_carson_hotel_courtyard.jpg');
+      /* Full height */
+      height: 100%;
+      width: 100%;
+      margin: auto;
+      padding: 0;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+      }
+
+
+      .parallax-image-3 {
+
+         /* The image used */
+      background-image: url('img/index/wok_charred_edamame_food_photographer_chris_wessling.jpg');
+      /* Full height */
+      height: 100%;
+      width: 100%;
+      margin: auto;
+      padding: 0;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+      }
+
+      .parallax-image-4 {
+
+         /* The image used */
+      background-image: url('img/index/carson_kitchen_patio.jpg');
+      /* Full height */
+      height: 100%;
+      width: 100%;
+      margin: auto;
+      padding: 0;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+      }
+
+      .parallax {
+      /* The image used */
+      background-image: url('img/index/carson_kitchen_main_dining.jpg');
+      /* Full height */
+      height: 100%;
+      width: 100%;
+      margin: auto;
+      padding: 0;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+     }
+
+         .heading {
+          color: white;
+          text-align: center;
+          padding-top: 200px;
+       }
+
+        .li{
+          list-style:none;
+          float: left;
+        }
+        #menu_btn{
+          display:none;
+          text-align:center;
+        }
+        #menu_btn:hover{
+          cursor:pointer;
+        }
+        #nav-ul{
+          display:block;
+          overflow:auto;
+        }
+        .nav-ul-li{
+          display:inline;
+        }
+        .nav-ul-li-a{
+          float: right;
+          display:block;
+          margin: auto;
+        }
+
+
+        div.img {
+    border: 1px solid #ccc;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+
+
+
+
+       @media only screen and (max-width:992px){
+         #menu_btn{
+            display:block;
+          }
+          .nav-ul-hide{
+            display:none;
+          }
+          .nav-ul-li-bl{
+            display:block;
+          }
+          .nav-ul-li-a-no{
+            float:none;
+            margin:auto;
+          }
+      }
+
+      @media only screen and (min-width: 992px){
+          .nav-ul-show {
+            display: block!important;
+          }
+      }
+
+
+
+    </style>
+    
+    <link rel="stylesheet" href="bootstrap.min.css">
+    
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index2.css">
+    
+    <script src="index2.js"></script>
+    
+
+  </head>
+    <body class="scroll-assist">
+       
+     <div class="container nav-container" style="margin: auto;height: auto;width: auto; background-color: darkgray"> 
+     
+       <section class="navbar navbar-default navbar-fixed-top" id="top" style="margin: auto;height: auto;width: auto;background-color:transparent">
+        <nav class="navbar navbar-fixed-top" style="margin: auto;width: auto;height: auto">
+
+         <section style="list-style-type: none;padding: 0;margin:auto; float: left; height: auto; width: auto;background-color: transparent">
+           <div class="col-md-6 p0 image" style="height:auto;width: auto;background-color:transparent">
+            
+             <div class="" style=" margin: auto;height: auto;width: auto;background-color: transparent">
+               <a class="navbar-header navbar-brand" style=" margin:auto; display: inline; background-color: transparent" href="index.html">        
+                 
+                 Carssars<strong>Kitchen</strong>
+                 
+                
+               </a>
+             </div>   
+                     
+           </div>
+         </section>
+
+         <section style="margin:auto; float: right;width: auto; height: auto">
+
+          <div style="margin: auto;width: auto; height: auto" class="module widget-handle mobile-toggle right visible-sm visible-xs">
+            <i class="navbar-brand ti-menu" herf="#" id="menu_btn"></i>
+          </div>
+
+          <div class="align-bottom text-center module widget-handle mobile-toggle left visible-sm visible-xs" style="margin: auto; height: auto;width: auto">
+            <ul class="navbar-brand list-inline social-list mb24">
+              <li>
+                <a href="https://twitter.com/CarsonKitchen?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="ti-twitter-alt icon-sm"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/CarsonKitchen/"><i class="ti-facebook icon-sm"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/carsonkitchen/?hl=en"><i class="ti-instagram icon-sm"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+         </section>
+
+
+         <div class="" style="list-style-type: none;margin:auto; float: right; height: auto;width: auto; background-color: transparent">
+           <section>
+              <ul class=" nav-ul-hide nav-ul-show"  style="margin:auto; float: right; height: auto;width: auto; background-color: transparent">
+                <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="index.html">Home</a></li>
+                <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="index.html#location">Location</a></li>
+                <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="index.html#about">About</a></li>
+                <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" rel="shadowbox[IOM]" href="https://www.itson.me/widget/carson_kitchen_menu" target="blank">Gift Cards</a></li>
+                <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="menu.html">Menu</a></li>
+                <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="group_dining.html">Group Dining</a></li>
+                <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="reservations.html">Reservations</a></li>
+                <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="https://www.facebook.com/CarsonKitchen/"><i class="ti-facebook"></i></a></li>
+                <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="https://twitter.com/CarsonKitchen?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="ti-twitter-alt"></i></a></li>
+                <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="https://www.instagram.com/carsonkitchen/?hl=en"><i class="ti-instagram"></i></a></li>
+              </ul> 
+           </section>         
+         </div>
+
+        </nav>
+       </section>
+
+     </div> 
+        
+        
+			
+   <div class="main-container parallax-image-4">
+            <section class="fullscreen image-bg overlay " style="background-color: transparent">
+                <!-- Image overlay opacity control is loacted on line 637 of the theme-gunmetal.css file - CW -->
+                <div class="background-image-holder">
+                    <img alt="chris wessling photography" class="background-image" src="img/group_dining/carson_kitchen_upstairs_patio.jpg" />
+                </div>
+                <div class="container v-align-transform">
+                            <div class="row">
+                                <div class="col-sm-10 col-sm-offset-1 text-center intro-trans">
+                                    <h2 class="uppercase large mb8">Group Dining in Fabulous
+										<br /><strong>Downtown Las Vegas</strong></h2>
+                                </div>
+                            </div>
+                            <!--end of row-->
+                        </div>
+                <div class="align-bottom text-center">
+                    <ul class="list-inline social-list mb24">
+                        <li>
+                            <a href="https://twitter.com/CarsonKitchen?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                                <i class="ti-twitter-alt icon-sm"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/CarsonKitchen/">
+                                <i class="ti-facebook icon-sm"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/carsonkitchen/?hl=en">
+                                <i class="ti-instagram icon-sm"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="events">
+               
+              <div class="container">
+                   
+                  <div class="row mb64 mb-xs-24">
+                       
+                      <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                            <h3 class="uppercase mb16" style="background-color:lavenderblush">Carson Kitchen Group Dining</h3>
+						              	<h6 class="mb8 uppercase" style="background-color:lavenderblush">Downtown Las Vegas' hippest restaurant venue for hosting your wedding reception, rehearsal dinner, birthday celebration or casual business get-together</h6><br>
+                           
+                            <p class="lead" style="background-color: lavenderblush">
+						              		Carson Kitchen offers several choices for your private dining event in Downtown Las Vegas.  When in season, our rooftop patio dining + private bar is the perfect space for your intimate gathering of friends or business colleagues.  The outdoor patio can seat up to 45 guests for dining and up to 65 guests standing. The main dining room downstairs can accommodate up to 70 guests for seated dining and up to 120 for standing. Groups may reserve either space, or both should the guest count demand it.</p>
+                            <p class="lead" style="background-color:lavenderblush">
+                            	In addition to our designated dining areas, the John E. Carson mid-century hotel courtyard provides a classic Vegas throw-back space for pre-function; perfect for wedding parties that want to keep their guests in a social setting prior to being invited in for dining.
+                            </p>
+                            <p class="lead" style="background-color: lavenderblush">
+							              	Best yet, for your visiting guests, Carson Kitchen is conveniently located one block from Downtown Las Vegas' Fremont Street Experience and walking distance to all the major hotels and downtown nightlife. Old-school Vegas is happening again!
+					              		</p>
+                        		<p class="lead">
+							               	To book a private event, please click on Gather below.
+						              	</p>
+					              		<p class="lead">
+					            			<a class="gather-lead-button font_blue" data-location-id="cdqkijah"><img src="img/reservations/gather.png" alt=""/></a>
+					              		</p>
+				              			<hr>
+                         		<h4>
+                       			<a href="https://www.facebook.com/CarsonKitchen/"><i class="ti-facebook"></i></a> <a href="https://twitter.com/CarsonKitchen?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="ti-twitter-alt"></i></a> <a href="https://www.instagram.com/carsonkitchen/?hl=en"><i class="ti-instagram"></i></a>
+					              		</h4>
+                       
+                      </div>
+                   
+              </div>
+
+                    <!--end of row-->
+                    <div class="row mb80 mb-xs-40">
+                        <div class="col-sm-6 mb-xs-16">
+                            <img alt="pot pie carson kitchen chris wessling photgraphy" src="img/group_dining/carson_kitchen_chicken_skins.jpg" />
+                        </div>
+                        <div class="col-sm-6">
+                            <img alt="spring asparagus credit downstairs loft creative" src="img/group_dining/spring_asparagus_credit_downstairs_loft_creative.jpg" />
+                        </div>
+                    </div>
+                    <!--end of row-->
+                    <div class="row mb80 mb-xs-40">
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                            <h4 class="uppercase mb16">Large Party Menu Choices</h4>
+                            <h6 class="mb8 uppercase">No longer do guests have to commit to a preselected entr&Eacute;e</h6><br>
+                            <p class="lead">
+                                For any party planner the biggest challenge is choosing a menu that will appease all of their guests' tastes, dietary restrictions and food allergies—we get it. Instead of forcing the guest to choose an item from "we've seen those entr&eacute;e choices on every banquet menu before,” Chef provides table-center offerings of Carson Kitchen's most popular items. Guests can help themselves to one or all items. No more wishing you had ordered what your friend had… it's all shared, so everyone's happy.
+                            </p>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                    <div class="row mb80 mb-xs-40">
+                        <div class="col-sm-6 mb-xs-16">
+                            <img alt="cheddar crab fondue chris wessling carson kitchen" src="img/group_dining/cheddar_crab_fondue_chris_wessling.jpg" />
+                        </div>
+						<div class="col-sm-6">
+                            <img alt="chris wessling food photogrpher las vegas" src="img/group_dining/salmon_carson_kitchen.jpg" />
+                        </div>
+                    </div>
+                    
+                </div>
+                <!--end of container-->
+            </section>
+            
+     <footer id="Footer" class="parallax" style="margin: auto;height: auto;width: auto;background-color: transparent">
+
+        <div>
+
+          <section id="footer" style="margin: auto;height: auto;width: auto;background-color: transparent">
+           
+            <ul class=" responsive" style="float: left;list-style-type: none;margin: auto;height: auto;width:100%; background-color: lavenderblush"> 
+              <li class="navbar-default pt240 pb240 image-bg background-image-holder responsive" style="margin: auto;height: auto;width: auto;background-color: transparent">
+                <a class="navbar-default navbar-header navbar-brand background-image-holder responsive" href="index.html" target="_blank" style="margin: auto;height: auto;width: auto;background-color: transparent" data-lightbox="true">
+                   <div class="col-md-6">
+							<h2 class="uppercase mb0 font-white" style="color: black">Carssars<strong>Kitchen</strong></h2>
+                   </div>
+               
+                </a>
+              </li>
+            </ul>
+
+            <div>
+
+              <section  style="margin: auto;height: auto;width: auto;background-color: transparent">
+ 
+                <ul class="  responsive" style="list-style-type: none;margin: auto;height: auto;width: 100%; background-color:transparent"> 
+                  
+                  <li class=" row">
+                     <a class=" background col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center" target="_blank">
+                      <span class="sub">
+                         <a class=" background col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center" href="https://www.elevenhospitalitygroup.com" target="_blank">
+                           <h6 class=" uppercase mb16">  ElevenHospitalityGroup.com</h6>
+                         </a>
+                         <a class=" background col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center" href="mailto:carsonkitchen@kirvindoak.com" target="_blank">
+                           <h6 class=" uppercase mb16"> Press Contact: carsonkitchen@kirvindoak.com</h6>
+                         </a> 
+                         <a class=" background col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center" href="mailto:emjye@mail.com" target="_blank">
+                           <h6 class=" uppercase mb16"> Design: Emys, LLC</h6>
+                         </a>                     
+                      </span>
+                      <br>
+                     </a>
+                  </li>
+                </ul>
+ 
+                <ul class="  responsive" style="list-style-type: none;margin: auto;height: auto;width: 100%; background-color:transparent"> 
+ 
+                   <li class="row">
+                     <a class="background col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center" href="https://www.facebook.com/CarsonKitchen/">
+                       <i class="ti-facebook"></i>
+                     </a>
+                   </li>
+                   <li class="row">
+                     <a class="background col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center" href="https://twitter.com/CarsonKitchen?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                       <i class="ti-twitter-alt"></i>
+                     </a>
+                   </li>
+                   <li class="row">
+                     <a class="background col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center" href="https://www.instagram.com/carsonkitchen/?hl=en">
+                       <i class="ti-instagram"></i>
+                     </a>
+                   </li>
+                   
+                </ul>
+    
+              </section>
+ 
+            </div>
+
+
+          </section>
+
+        </div>
+
+
+     </footer>
+
+  </div>
+        
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/flickr.js"></script>
+        <script src="js/flexslider.min.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/masonry.min.js"></script>
+        <script src="js/twitterfetcher.min.js"></script>
+        <script src="js/spectragram.min.js"></script>
+        <script src="js/ytplayer.min.js"></script>
+        <script src="js/countdown.min.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+        <script src="js/parallax.js"></script>
+        <script src="js/scripts.js"></script>
+        
+		<!-- Gather -->
+		<script type="text/javascript" src="https://gatherhere.com/js/leadform.js" id="gather-loader" data-advanced></script>
+		<!-- /Gather -->
+		
+        <script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-31091540-36', 'auto');
+		  ga('send', 'pageview');
+		</script>
+
+        
+   <script>
+        $('#menu_btn').click(function(){
+          $('nav ul').slideToggle();
+        })
+   </script>
+   
+    </body>
+</html>

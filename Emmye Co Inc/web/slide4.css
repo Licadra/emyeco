@@ -1,0 +1,51 @@
+.carousel-inner1{position:relative;width:100%;overflow:hidden}
+.carousel-inner1>.item{position:relative;display:none;-webkit-transition:.6s ease-in-out left;-o-transition:.6s ease-in-out left;transition:.6s ease-in-out left}
+.carousel-inner1>.item>a>img,.carousel-inner1>.item>img{line-height:1}@media all and (transform-3d),(-webkit-transform-3d){
+    .carousel-inner1>.item{-webkit-transition:-webkit-transform .6s ease-in-out;-o-transition:-o-transform .6s ease-in-out;transition:-webkit-transform .6s ease-in-out;transition:transform .6s ease-in-out;transition:transform .6s ease-in-out,-webkit-transform .6s ease-in-out,-o-transform .6s ease-in-out;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-perspective:1000px;perspective:1000px}
+    .carousel-inner1>.item.active.right,.carousel-inner1>.item.next{-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0);left:0}
+    .carousel-inner1>.item.active.left,.carousel-inner1>.item.prev{-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);left:0}
+    .carousel-inner1>.item.active,.carousel-inner1>.item.next.left,.carousel-inner1>.item.prev.right{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);left:0}}
+    .carousel-inner1>.active,.carousel-inner1>.next,.carousel-inner1>.prev{display:block}
+    .carousel-inner1>.active{left:0}
+    .carousel-inner1>.next,.carousel-inner1>.prev{position:absolute;top:0;width:100%}
+    .carousel-inner1>.next{left:100%}.carousel-inner1>.prev{left:-100%}
+    .carousel-inner1>.next.left,.carousel-inner1>.prev.right{left:0}
+    .carousel-inner1>.active.left{left:-100%}
+    .carousel-inner1>.active.right{left:100%}
+
+    .carousel-inner1>.item1>a>img,.carousel-inner1>.item1>img,.img-responsive,.thumbnail a>img,.thumbnail>img{
+        display:block;max-width:100%;height:auto}
+        .img-rounded{border-radius:6px}
+
+        .carousel-inner1>.item1{
+            position:relative;display:none;-webkit-transition:.6s ease-in-out left;-o-transition:.6s ease-in-out left;transition:.6s ease-in-out left}
+            .carousel-inner1>.item1>a>img,.carousel-inner1>.item1>img{
+                line-height:1}
+                @media all and (transform-3d),(-webkit-transform-3d){
+                    .carousel-inner1>.item1{-webkit-transition:-webkit-transform .6s ease-in-out;-o-transition:-o-transform .6s ease-in-out;transition:-webkit-transform .6s ease-in-out;transition:transform .6s ease-in-out;transition:transform .6s ease-in-out,-webkit-transform .6s ease-in-out,-o-transform .6s ease-in-out;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-perspective:1000px;perspective:1000px}
+                    .carousel-inner1>.item1.active.right,.carousel-inner1>.item1.next{
+                        -webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0);left:0}
+                        .carousel-inner1>.item1.active.left,.carousel-inner1>.item1.prev{
+                            -webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);left:0}
+                            .carousel-inner1>.item1.active,.carousel-inner1>.item.next.left,.carousel-inner1>.item1.prev.right{
+                                -webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);left:0}}
+
+                                .carousel-control1{
+                                    position:absolute;top:0;bottom:0;left:0;width:15%;font-size:20px;color:#fff;text-align:center;text-shadow:0 1px 2px rgba(0,0,0,.6);background-color:rgba(0,0,0,0);filter:alpha(opacity=50);opacity:.5}
+                                    .carousel-control1.left{
+                                        background-image:-webkit-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);background-image:-o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);background-image:-webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001)));background-image:linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);background-repeat:repeat-x}
+                                        .carousel-control1.right{right:0;left:auto;background-image:-webkit-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);background-image:-o-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);background-image:-webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.5)));background-image:linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);background-repeat:repeat-x}
+                                        .carousel-control1:focus,.carousel-control1:hover{
+                                            color:#fff;text-decoration:none;outline:0;filter:alpha(opacity=90);opacity:.9}
+                                            .carousel-control1 .glyphicon-chevron-left,.carousel-control1 .glyphicon-chevron-right,.carousel-control1 .icon-next,.carousel-control1 .icon-prev{
+                                                position:absolute;top:50%;z-index:5;display:inline-block;margin-top:-10px}
+                                                .carousel-control1 .glyphicon-chevron-left,.carousel-control1 .icon-prev{
+                                                    left:50%;margin-left:-10px}
+                                                    .carousel-control1 .glyphicon-chevron-right,.carousel-control1 .icon-next{
+                                                        right:50%;margin-right:-10px}
+                                                        .carousel-control1 .icon-next,.carousel-control1 .icon-prev{
+                                                            width:20px;height:20px;font-family:serif;line-height:1}
+                                                            .carousel-control1 .icon-prev:before{
+                                                                content:"\2039"}
+                                                                .carousel-control1 .icon-next:before{
+                                                                    content:"\203a"}

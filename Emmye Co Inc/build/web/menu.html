@@ -1,0 +1,896 @@
+<!doctype html>
+<html lang="en">
+     <head>
+    <meta charset="utf-8">
+    <title>Carssars Kitchen </title>
+    <meta name="description" content="Downtown Las Vegas neighborhood urban dining located at 6th St. &amp; Carson Ave., in the historic John E. Carson Hotel.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">    
+    
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/theme-gunmetal.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600" rel="stylesheet" type="text/css">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="img/favicon/manifest.json">
+    
+    <style>
+    body, html {
+      height: 100%;
+      margin:auto;
+      padding:0;
+      }
+
+      .parallax-image-1 {
+
+         /* The image used */
+      background-image: url('img/index/blackened_catfish_credit_chris_wessling.jpg');
+      /* Full height */
+      height: 100%;
+      width: 100%;
+      margin: auto;
+      padding: 0;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+      }
+      .parallax-image-2 {
+
+         /* The image used */
+      background-image: url('img/index/john_e_carson_hotel_courtyard.jpg');
+      /* Full height */
+      height: 100%;
+      width: 100%;
+      margin: auto;
+      padding: 0;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+      }
+
+
+      .parallax-image-3 {
+
+         /* The image used */
+      background-image: url('img/index/wok_charred_edamame_food_photographer_chris_wessling.jpg');
+      /* Full height */
+      height: 100%;
+      width: 100%;
+      margin: auto;
+      padding: 0;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+      }
+
+      .parallax-image-4 {
+
+         /* The image used */
+      background-image: url('img/index/carson_kitchen_patio.jpg');
+      /* Full height */
+      height: 100%;
+      width: 100%;
+      margin: auto;
+      padding: 0;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+      }
+
+      .parallax {
+      /* The image used */
+      background-image: url('img/index/carson_kitchen_main_dining.jpg');
+      /* Full height */
+      height: 100%;
+      width: 100%;
+      margin: auto;
+      padding: 0;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+     }
+
+         .heading {
+          color: white;
+          text-align: center;
+          padding-top: 200px;
+       }
+
+        .li{
+          list-style:none;
+          float: left;
+        }
+        #menu_btn{
+          display:none;
+          text-align:center;
+        }
+        #menu_btn:hover{
+          cursor:pointer;
+        }
+        #nav-ul{
+          display:block;
+          overflow:auto;
+        }
+        .nav-ul-li{
+          display:inline;
+        }
+        .nav-ul-li-a{
+          float: right;
+          display:block;
+          margin: auto;
+        }
+
+
+        div.img {
+    border: 1px solid #ccc;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+
+
+
+
+       @media only screen and (max-width:992px){
+         #menu_btn{
+            display:block;
+          }
+          .nav-ul-hide{
+            display:none;
+          }
+          .nav-ul-li-bl{
+            display:block;
+          }
+          .nav-ul-li-a-no{
+            float:none;
+            margin:auto;
+          }
+      }
+
+      @media only screen and (min-width: 992px){
+          .nav-ul-show {
+            display: block!important;
+          }
+      }
+
+
+
+    </style>
+    
+    <link rel="stylesheet" href="bootstrap.min.css">
+    
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index2.css">
+    
+    <script src="index2.js"></script>
+    
+
+  </head>
+    <body class="scroll-assist">
+       
+  <div class="container nav-container" style="margin: auto;height: auto;width: auto; background-color: darkgray"> 
+     
+       <section class="navbar navbar-default navbar-fixed-top" id="top" style="margin: auto;height: auto;width: auto;background-color:transparent">
+        <nav class="navbar navbar-fixed-top" style="margin: auto;width: auto;height: auto">
+
+         <section style="list-style-type: none;padding: 0;margin:auto; float: left; height: auto; width: auto;background-color: transparent">
+           <div class="col-md-6 p0 image" style="height:auto;width: auto;background-color:transparent">
+            
+             <div class="" style=" margin: auto;height: auto;width: auto;background-color: transparent">
+               <a class="navbar-header navbar-brand" style=" margin:auto; display: inline; background-color: transparent" href="index.html">        
+                 
+                 Carssars<strong>Kitchen</strong>
+                 
+                
+               </a>
+             </div>   
+                     
+           </div>
+         </section>
+
+         <section style="margin:auto; float: right;width: auto; height: auto">
+
+          <div style="margin: auto;width: auto; height: auto" class="module widget-handle mobile-toggle right visible-sm visible-xs">
+            <i class="navbar-brand ti-menu" herf="#" id="menu_btn"></i>
+          </div>
+
+          <div class="align-bottom text-center module widget-handle mobile-toggle left visible-sm visible-xs" style="margin: auto; height: auto;width: auto">
+            <ul class="navbar-brand list-inline social-list mb24">
+              <li>
+                <a href="https://twitter.com/CarsonKitchen?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="ti-twitter-alt icon-sm"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/CarsonKitchen/"><i class="ti-facebook icon-sm"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/carsonkitchen/?hl=en"><i class="ti-instagram icon-sm"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+         </section>
+
+
+         <div class="" style="list-style-type: none;margin:auto; float: right; height: auto;width: auto; background-color: transparent">
+           <section>
+              <ul class=" nav-ul-hide nav-ul-show"  style="margin:auto; float: right; height: auto;width: auto; background-color: transparent">
+                <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="index.html">Home</a></li>
+                <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="index.html#location">Location</a></li>
+                <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="index.html#about">About</a></li>
+                <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" rel="shadowbox[IOM]" href="https://www.itson.me/widget/carson_kitchen_menu" target="blank">Gift Cards</a></li>
+                <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="menu.html">Menu</a></li>
+                <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="group_dining.html">Group Dining</a></li>
+                <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="reservations.html">Reservations</a></li>
+                <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="https://www.facebook.com/CarsonKitchen/"><i class="ti-facebook"></i></a></li>
+                <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="https://twitter.com/CarsonKitchen?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="ti-twitter-alt"></i></a></li>
+                <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="https://www.instagram.com/carsonkitchen/?hl=en"><i class="ti-instagram"></i></a></li>
+              </ul> 
+           </section>         
+         </div>
+
+        </nav>
+       </section>
+
+  </div>
+        
+        <div class="parallax main-container" style="background-color: transparent" >
+			
+            <section class="page-title page-title-4 bg-menu-4" style="background-color: transparent">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+							<h2 class="uppercase mb0 font-white" style="color: black; background-color: lightgrey">Our<strong>Menu</strong></h2>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            
+            <section id="menu" style="background-color: transparent" >
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-md-6 text-center">
+                             <div  class="feature bordered text-center bg-secondary">
+                                
+                                <h3 style="color: black; background-color: lightgrey" class="uppercase mb40 mb-xs-24">Social Plates</h3>
+								
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Crispy Chicken Skins</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        smoked honey
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Wok Charred Edamame</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        ginger salt, t&otilde;garashi
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Bacon Jam</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        baked brie, toasted baguette
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">“Devil’s” Eggs</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        crispy pancetta, caviar
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Tempura Green Beans</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        pepper jelly cream cheese
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Gyro Tacos</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        lamb, tzatziki, feta, tomato
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Veal Meatballs </h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        sherry foie gras cream
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Killer Shrimp</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        rocoto &amp; aji amarillo pepper cream
+                                    </p>
+                                </div>
+								 <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey"class="mb8 uppercase">Pork Belly</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        buffalo bleu beurre blanc
+                                    </p>
+                                </div>
+                                
+                                <hr>
+                                
+                                <h3 style="color: black; background-color: lightgrey" class="uppercase mb40 mb-xs-24">Between Bread</h3>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Butter Burger</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        boursin, cheddar, lettuce, tomato
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Secret Sunday Chicken</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        spicy pickle aioli
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Jerk Turkey Burger</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        mango chutney slaw
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Wild Boar Sloppy Joe</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        crispy fennel, orange aioli
+                                    </p>
+                                </div>
+                                
+                                <hr>
+                                
+                                <h3 style="color: black; background-color: lightgrey" class="uppercase mb40 mb-xs-24">Something Sweet</h3>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Bourbon Fudge Brownie</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        brown butter bacon ice cream
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Glazed Donut Bread Pudding</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        three rum caramel, vanilla cr&egrave;me anglaise
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Peach Upside-Down Cake</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        crafthaus zitrone, whipped mascarpone
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div style="color: black; background-color: lightgrey" class="col-md-6 text-center">
+                            <div class="feature bordered text-center bg-primary">
+                                
+                                <h3 style="color: black; background-color: lightgrey" class="uppercase mb40 mb-xs-24">Meat &amp; Fish</h3>
+								
+                                
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Chicken Thighs</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        alabama white barbecue
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Cocoa-Espresso NY Strip</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        red wine demi
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Blackened Catfish</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        spring pea slaw
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Pork Tenderloin</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        jalape&ntilde;o pesto
+                                    </p>
+                                </div>
+                                
+                                <hr>
+                                
+                                <h3 style="color: black; background-color: lightgrey" class="uppercase mb40 mb-xs-24">Farm &amp; Garden</h3>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Young Beets</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        pistachio, red &amp; green grape, goat cheese
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Brussels Sprout Caesar</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        black kale, bacon lardon
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Broccoli Crunch</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                         green goddess, sunflower &amp; pumpkin seeds
+                                    </p>
+                                </div>
+								<div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Watermelon &amp; Feta</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        cucumber, white balsamic
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Black Rice &amp; Oxtail Risotto</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        parmesan cream
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6  style="color: black; background-color: lightgrey" class="mb8 uppercase">Baked Mac &amp; Cheese</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        shhhh, it’s a secret
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Rainbow Cauliflower</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        garlic, lemon juice
+                                    </p>
+                                </div>
+								<div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Fried Green Tomatoes</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        lump crab ravigote
+                                    </p>
+                                </div>
+                                
+                                <hr>
+                                
+                                <h3 style="color: black; background-color: lightgrey" class="uppercase mb40 mb-xs-24">Flatbreads</h3>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Wild Mushroom</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        caramelized onion, bleu cheese
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Green, Eggs, &amp; Ham</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        pistou, smoked mozz, tasso
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            
+            <div class="lightbox-grid third-thumbs bg-secondary" style="background-color: transparent">
+                <ul>
+                    <li>
+                    <a href="img/index/gallery/zyzzyva.jpg" data-lightbox="true">
+                            <div class="background-image-holder">
+                                <img alt="zyzzyva cocktail" class="background-image" src="img/index/gallery/zyzzyva_tn.jpg" />
+                        </div>
+                        </a>
+                    </li>
+                    <li>
+                    <a href="img/index/gallery/fried_green_tomatoes_credit_chris_wessling.jpg" data-lightbox="true">
+                            <div class="background-image-holder">
+                                <img alt="fried green tomatoes credit chris wessling las vegas" class="background-image" src="img/index/gallery/fried_green_tomatoes_credit_chris_wessling_tn.jpg" />
+                        </div>
+                        </a>
+                    </li>
+                    <li>
+                    <a href="img/index/gallery/afternoon_delight_cocktail.jpg" data-lightbox="true">
+                            <div class="background-image-holder">
+                                <img alt="afternoon delight cocktail carson kitchen" class="background-image" src="img/index/gallery/afternoon_delight_cocktail_tn.jpg" />
+                        </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <section class="bg-secondary" id="menu_2" style="background-color: transparent">
+                <div class="container">
+                  	
+					<h3 style="color: black; background-color: lightgrey" class="uppercase mb16 text-center">Libations</h3>
+					<h5 style="color: black; background-color: lightgrey" class="text-center"><i>...because no good love story started with someone ordering a salad.</i></h5>
+                   
+                    <div class="row">
+                       
+                        <div class="col-md-6 text-center">
+                             <div class="feature bordered text-center bg-menu-2">
+                                
+                                <h3 style="color: black; background-color: lightgrey" class="uppercase mb40 mb-xs-24">Lagers &amp; Ales</h3>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Pabst Blue Ribbon American Lager</h6>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Bohemia Mexican Lager</h6>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Big Dog’s Las Vegas Craft Lager</h6>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Anchor Steam Lager</h6>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Peroni Italian Lager</h6>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Deschutes Da Shootz! American Pilsner</h6>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Squatter’s Hell’s Keep Belgian-Style Golden Ale</h6>
+                                </div>
+                                 
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Sierra Nevada Hazy Little Thing IPA</h6>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Lagunitas Super Cluster Citra-Hopped Mega Ale</h6>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Crafthaus Zitrone Gose</h6>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Einst&Ouml;k Arctic Pale Ale</h6>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Bad Beat Hoppy Times IPA</h6>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Weihenstephaner Hefe Weissbier</h6>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Funkwerks Tropic King Imperial Saison</h6>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Tenaya Creek Bonanza Brown Ale</h6>
+                                </div>
+								 <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Great Basin Milk Stout</h6>
+                                </div>
+                                
+                                <hr>
+                                
+                                <h3 style="color: black; background-color: lightgrey" class="uppercase mb40 mb-xs-24">Gluten Free</h3>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Estrella Damm Daura</h6>
+                                </div>
+                                 <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Wyder's Raspberry Cider</h6>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Seattle Cider Semi-Sweet Apple</h6>
+                                </div>
+                                
+                                <hr>
+                                
+                                <h3 style="color: black; background-color: lightgrey" class="uppercase mb40 mb-xs-24">For All Ages</h3>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Specialty Sodas</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        Mr. Q Cucummer Soda &amp; Fever Tree Ginger Ale
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Virgil's Microbrews</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        Root Beer, Dr. Better &amp; Orange Creame Soda
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Bottled Water</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        Acqua Panna Still &amp; Badoit Sparkling
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 text-center">
+                            <div class="feature bordered text-center bg-menu-3">
+                                
+                                <h3 style="color: black; background-color: lightgrey" class="uppercase mb40 mb-xs-24">Reds &amp; Whites</h3>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Cabernet Sauvignon, Pendulum, Columbia Valley</h6>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Beaujolais Ch&acirc;teau de Corcelles, France</h6>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Pinot Noir, Folly of the Beast, Central Coast</h6>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Rioja, Baron De Ley, Spain</h6>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">C&ocirc;tes du Rh&ocirc;ne, Famille Perrin, France</h6>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Malbec, Zolo, Argentina</h6>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Ros&Eacute;, Champs de Provence, France</h6>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Verdicchio, Castelfiora, Italy</h6>
+                                </div>
+                                <div class="mb40">
+									<h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Riesling, Heinz Eifel, Germany</h6>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Chardonnay, Drumheller, Columbia Valley</h6>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Pinot Grigio, Stemmari, Italy</h6>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Sauvignon Blanc, Outer Sounds, New Zealand</h6>
+                                </div>
+                                
+                                <hr>
+                                
+                                <h3 style="color: black; background-color: lightgrey" class="uppercase mb40 mb-xs-24">Shaken &amp; Stirred</h3>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Tricky Vic</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        gosling’s black &amp; sugar island spiced rums, cointreau, velvet falernum, <br>fresh lime &amp; pineapple, rhubarb bitters
+                                    </p>
+                                </div>
+								<div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Purple Haze (Reprise)</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        blue ice multi-grain vodka, mint, elderflower, fresh lemon, blueberry preserve
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Communication Breakdown</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        del maguey vida mezcal, fresh sour, bar keep lavender bitters, <br>domaine de canton ginger &amp; contratto bitter liqueurs
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Pretty Rye for a Chi Guy</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        george dickel rye, orgeat syrup, velvet falernum, fresh lime, mint
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Get Shorty!</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        el jimador tequila, grapefruit, fresh lime, cayenne simple syrup
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">The Magarian</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        aviation gin, thyme &amp; honey syrup, fresh lemon, mr. q cumber soda
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Towns End</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        slow &amp; low whiskey, fernet vittone, amaro del sole, <br>regan's bitters #6, angostura bitters
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">Girl from Ipanema</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        avua prata cachaça, sv&ouml;l swedish-style aquavit, watermelon, <br>fresh lime, basil, balsamic vinegar
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">The Bee’s Knees</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        drumshanbo gunpowder irish gin, smoked honey, fresh lemon
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 style="color: black; background-color: lightgrey" class="mb8 uppercase">#SimonSays Sangria</h6>
+                                    <p style="color: black; background-color: lightgrey">
+                                        white wine, sparkling wine, peach purée, seasonal fruit
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+
+      <footer id="Footer" class="parallax" style="margin: auto;height: auto;width: auto;background-color: transparent">
+
+        <div>
+
+          <section id="footer" style="margin: auto;height: auto;width: auto;background-color: transparent">
+           
+            <ul class=" responsive" style="float: left;list-style-type: none;margin: auto;height: auto;width:100%; background-color: lavenderblush"> 
+              <li class="navbar-default pt240 pb240 image-bg background-image-holder responsive" style="margin: auto;height: auto;width: auto;background-color: transparent">
+                <a class="navbar-default navbar-header navbar-brand background-image-holder responsive" href="index.html" target="_blank" style="margin: auto;height: auto;width: auto;background-color: transparent" data-lightbox="true">
+                   <div class="col-md-6">
+							<h2 class="uppercase mb0 font-white" style="color: black">Carssars<strong>Kitchen</strong></h2>
+                   </div>
+               
+                </a>
+              </li>
+            </ul>
+
+            <div>
+
+                <section  style="margin: auto;height: auto;width: auto;background-color: transparent">
+   
+                  <ul class="  responsive" style="list-style-type: none;margin: auto;height: auto;width: 100%; background-color:transparent"> 
+                    
+                    <li class=" row">
+                       <a class=" background col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center" target="_blank">
+                        <span class="sub">
+                           <a class=" background col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center" href="https://www.elevenhospitalitygroup.com" target="_blank">
+                             <h6 class=" uppercase mb16">  ElevenHospitalityGroup.com</h6>
+                           </a>
+                           <a class=" background col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center" href="mailto:carsonkitchen@kirvindoak.com" target="_blank">
+                             <h6 class=" uppercase mb16"> Press Contact: carsonkitchen@kirvindoak.com</h6>
+                           </a> 
+                           <a class=" background col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center" href="mailto:emjye@mail.com" target="_blank">
+                             <h6 class=" uppercase mb16"> Design: Emys, LLC</h6>
+                           </a>                     
+                        </span>
+                        <br>
+                       </a>
+                    </li>
+                  </ul>
+   
+                  <ul class="  responsive" style="list-style-type: none;margin: auto;height: auto;width: 100%; background-color:transparent"> 
+   
+                     <li class="row">
+                       <a class="background col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center" href="https://www.facebook.com/CarsonKitchen/">
+                         <i class="ti-facebook"></i>
+                       </a>
+                     </li>
+                     <li class="row">
+                       <a class="background col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center" href="https://twitter.com/CarsonKitchen?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                         <i class="ti-twitter-alt"></i>
+                       </a>
+                     </li>
+                     <li class="row">
+                       <a class="background col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center" href="https://www.instagram.com/carsonkitchen/?hl=en">
+                         <i class="ti-instagram"></i>
+                       </a>
+                     </li>
+                     
+                  </ul>
+      
+                </section>
+   
+            </div>
+
+
+          </section>   
+
+        </div>
+
+
+      </footer>
+            
+      
+        </div>
+
+               
+        
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/flickr.js"></script>
+        <script src="js/flexslider.min.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/masonry.min.js"></script>
+        <script src="js/twitterfetcher.min.js"></script>
+        <script src="js/spectragram.min.js"></script>
+        <script src="js/ytplayer.min.js"></script>
+        <script src="js/countdown.min.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+        <script src="js/parallax.js"></script>
+        <script src="js/scripts.js"></script>
+        
+        <script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-31091540-36', 'auto');
+		  ga('send', 'pageview');
+		</script>
+
+        
+   <script>
+        $('#menu_btn').click(function(){
+          $('nav ul').slideToggle();
+        })
+   </script>
+   
+    </body>
+</html>

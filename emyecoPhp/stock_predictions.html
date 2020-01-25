@@ -1,0 +1,19 @@
+<html>
+<head>
+</head>
+<body>
+
+<p><b>Start typing a name in the input field below:</b></p>
+<script src="http://localhost:8000/gethint.js"></script>
+
+<form>
+First name: <input type="text" onkeyup="showHint(this.value)">
+</form>
+<p>Suggestions: <span id="txtHint"></span></p>
+
+<h1>Getting server updates</h1>
+<div id="updates"></div>
+
+<script src="http://localhost:8000/server_sent_events.js"></script>
+</body>
+</html>

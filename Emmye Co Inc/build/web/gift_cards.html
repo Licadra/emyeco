@@ -1,0 +1,153 @@
+
+<!DOCTYPE HTML>
+<html ng-app="iom-widget">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+    <meta charset="UTF-8">
+    <title>Give a Gift | ItsOnMe</title>
+    
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, minimal-ui">
+    <meta name="apple-itunes-app" content="app-id=659661295, app-argument=drinkboard://">
+    <meta name="google-site-verification" content="lez3ZuBN7X2ee77JQR3pBgPOo_m9nNUALk96WSCWcjQ" />
+    <meta name="Description">
+    <meta property="og:url" content="http://www.itson.me/widget/carson_kitchen_menu" />
+    <meta property="fb:app_id" content="428139010570600" />
+    <meta property="og:image" content="http://www.itson.me/content/images/fb-share.jpg" id="og_image" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:title" content="Give a Gift | ItsOnMe" id="og_title" />
+    <meta property="og:description" content="Give a Gift. Using ItsOnMe. ItsOnMe allows you to send digital gift cards instantly for the best local bars and restaurants. Its the perfect way to say &#39;It&#39;s on me&#39;!" />
+    <meta property="og:site_name" content="ItsOnMe | Send digital gift cards instantly for the best local bars and restaurants." />
+    <meta property="og:type" content="website" />
+    <link href="/content/favicon.png" type="image/png" rel="shortcut icon">
+    <link href="/content/favicon.png" rel="apple-touch-icon">
+
+    <!-- Style Links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:400,500" type="text/css">
+    <script src="https://use.fortawesome.com/cdc60d71.js"></script>
+
+    <link href="/bundles/css/common?v=ibIkAVm-5bw-7nRnEZPpt8e4XABKHRHO7IbAd-QmI0M1" rel="stylesheet"/>
+<link href="/bundles/css/widgets?v=VhqgWPBM5Gfeqqr5E7e3S9ypPeFy706h4y1q1pdD9xY1" rel="stylesheet"/>
+
+
+    <!-- Script Links -->
+    <!-- Make IE8 and below responsive by adding CSS3 MediaQuery support -->
+    <!--[if lt IE 9]><script type="text/javascript" src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>  
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-route.min.js"></script>  
+
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.min.css">
+	<link rel="stylesheet" href="/Content/css/flexslider.css" type="text/css">
+
+</head>
+<body>
+        <!-- error-notifications -->
+<div class="error-notification fade in clickable" ng-controller="error_controller" ng-show="error.hasErrors() || error.hasSuccesses()" ng-click="error.dismiss()" ng-cloak>
+    <ul>
+        <li class="error-msg" ng-repeat="error in error.getErrors()">
+            <div class="container">{{ error.msg }} <i class="glyphicon glyphicon-remove pull-right" ng-click="$parent.error.dismiss()"></i></div>
+        </li>
+        <li class="success-msg" ng-repeat="success in error.getSuccesses()">
+            <div class="container">{{ success.msg }} <i class="glyphicon glyphicon-remove pull-right" ng-click="$parent.error.dismiss()"></i></div>
+        </li>
+    </ul>
+</div>
+
+    <!-- ng-view -->
+    <div ng-view class="widget-content"></div>    
+    <!-- /ng-view -->
+
+    <!--
+    <div class="powered-by text-center">
+        <small>Powered by</small>
+        <a href="http://www.itson.me" target="_blank"><img src="~/content/branding/itsonme/logo-drop-shadow.png" /></a>
+    </div>
+    -->
+
+    <!-- widget_explainer_modal -->
+    <div ng-include="'/areas/widgets/views/render/templates/components/widget_explainer_modal.html'"></div>
+    <!-- /widget_explainer_modal -->
+
+    <!-- login-modal -->
+    <div ng-include="'/views/shared/components/login_modal.html'"></div>
+    <!-- /login-modal -->
+
+
+
+
+    <script type="text/javascript" src="/Scripts/Lib/Ng/timeAgo.min.js"></script>
+    <script src="/bundles/framework?v=gokDs0Eez3qzr8wSzPwZDPyRfc8f2ONL6krfjSZy3xU1"></script>
+<script src="/bundles/widgets?v=6uPzJbM9uVcDuSeVQc5Wh3uvU2brfFectxTNj-wmgy41"></script>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.min.js"></script>
+    <script type="text/javascript" src="/Scripts/Lib/timepickerdirective.js"></script>
+    
+    <!-- Stripe Payments -->
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>   
+
+	<script src="/Scripts/Lib/Jquery/jquery.flexslider.js"></script>
+
+    <!-- Widget Application -->
+    <script type="text/javascript">
+        itsonme.settings.widget = { data_type: 'merchant', data_id: '193' };        
+    </script>
+
+    <script type="text/javascript">
+          Stripe.setPublishableKey('pk_live_xaW3dBfvpfXB0UbiYBZFYaHU');
+    </script>
+
+
+    <!-- Application -->
+    <script type="text/javascript">
+        itsonme.settings.domains.api = 'https://api.itson.me';
+        itsonme.settings.keys = { general: 'a87dfdsfOtg44RMgFytxdG', app: 'I8uPyxbJk1uiH5pOjxzTKg1gCyCD1PMjQaCbU7ubg2RQ' };
+        itsonme.settings.debug.enabled = false;
+    </script>
+
+    <!-- Facebook SDK -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function ()
+        {
+            FB.init({
+                appId: '428139010570600',
+                cookie: true,
+                xfbml: true,
+                version: 'v2.12'
+            });
+            FB.AppEvents.logPageView();
+        };
+        (function (d, s, id)
+        {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- GA Tracking Code -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-43291541-1', 'auto');
+        ga('require', 'linkid', 'linkid.js');
+    </script>
+    <!-- End Tracking Code -->
+</body>
+</html>

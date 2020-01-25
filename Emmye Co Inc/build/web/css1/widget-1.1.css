@@ -1,0 +1,96 @@
+/* WINDOW STYLES */
+#sb-title-inner,#sb-info-inner,#sb-loading-inner,div.sb-message{font-family:"HelveticaNeue-Light","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:200;color:#fff}
+#sb-container{position:fixed;margin:0;padding:0;top:0;left:0;z-index:999;text-align:left;visibility:hidden;display:none}
+#sb-overlay{position:relative;height:100%;width:100%}
+#sb-wrapper{position:absolute;visibility:hidden;width:100px}
+#sb-wrapper-inner{position:relative;border:1px solid #303030;overflow:hidden;height:100px}
+#sb-body{position:relative;height:100%}
+#sb-body-inner{position:absolute;height:100%;width:100%}
+#sb-player.html{height:100%;overflow:auto}
+#sb-body img{border:none}
+#sb-loading{position:relative;height:100%}
+#sb-loading-inner{position:absolute;font-size:14px;line-height:24px;height:24px;top:50%;margin-top:-12px;width:100%;text-align:center}
+#sb-loading-inner span{background:url(https://www.itson.me/content/images/widget/loading.gif) no-repeat;padding-left:34px;display:inline-block}
+#sb-body,#sb-loading{background-color:#060606}
+#sb-title,#sb-info{position:relative;margin:0;padding:0;overflow:hidden}
+#sb-title,#sb-title-inner{height:26px;line-height:26px}
+#sb-title-inner{font-size:16px}
+#sb-info,#sb-info-inner{height:20px;line-height:20px}
+#sb-info-inner{font-size:12px}
+#sb-nav{float:right;height:16px;padding:2px 0;width:45%}
+#sb-nav a{display:block;float:right;height:16px;width:16px;margin-left:3px;cursor:pointer;background-repeat:no-repeat}
+/*
+#sb-nav-close{background-image:url(close.png)}
+#sb-nav-next{background-image:url(next.png)}
+#sb-nav-previous{background-image:url(previous.png)}
+#sb-nav-play{background-image:url(play.png)}
+#sb-nav-pause{background-image:url(pause.png)}
+*/
+#sb-counter{float:left;width:45%}
+#sb-counter a{padding:0 4px 0 0;text-decoration:none;cursor:pointer;color:#fff}
+#sb-counter a.sb-counter-current{text-decoration:underline}
+div.sb-message{font-size:12px;padding:10px;text-align:center}
+div.sb-message a:link,div.sb-message a:visited{color:#fff;text-decoration:underline}
+#sb-container{z-index:10000}
+#sb-wrapper{box-shadow:0 0 20px rgba(0,0,0,.6); }
+#sb-title,#sb-title-inner{height:30px;background-color:#20252B;line-height:30px;text-align:center}
+#sb-info-inner{padding:5px}
+#sb-info,#sb-info-inner{height:30px;background-color:#20252B}
+#sb-nav-close{background-image:url(https://www.itson.me/content/images/widget/close.png)}
+#sb-nav-next{background-image:none}
+#sb-nav-previous{background-image:none}
+#sb-nav-play{background-image:none}
+#sb-nav-pause{background-image:none}
+#sb-counter{background-image:url(https://www.itson.me/content/widget/logo-secure.png);height:20px;background-repeat:no-repeat;background-size:contain}
+
+/* BUTTON STYLES */
+.iom-button{display:inline-block;zoom:1;line-height:normal;white-space:nowrap;vertical-align:middle;text-align:center;cursor:pointer;-webkit-user-drag:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.iom-button::-moz-focus-inner{padding:0;border:0}
+.iom-button{font-family:inherit;font-size:14px;font-weight:700;line-height:30px;padding:.5em 1em;color:#444;color:rgba(0,0,0,.8);border:1px solid #999;border:0 rgba(0,0,0,0);background-color:#E6E6E6;text-decoration:none;border-radius:2px;width:150px}
+.iom-button-rounded{border-radius:30px}
+.iom-button-hover,.iom-button:hover,.iom-button:focus{filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000',endColorstr='#1a000000',GradientType=0);background-image:-webkit-gradient(linear,0 0,0 100%,from(transparent),color-stop(40%,rgba(0,0,0,.05)),to(rgba(0,0,0,.1)));background-image:-webkit-linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));background-image:-moz-linear-gradient(top,rgba(0,0,0,.05) 0,rgba(0,0,0,.1));background-image:-o-linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));background-image:linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));text-decoration:none;color:#fff}
+.iom-button:focus{outline:0}
+.iom-button:active{box-shadow:0 0 0 1px rgba(0,0,0,.15) inset,0 0 6px rgba(0,0,0,.2) inset;border-color:#0009}
+.iom-button[disabled],.iom-button-disabled,.iom-button-disabled:hover,.iom-button-disabled:focus,.iom-button-disabled:active{border:0;background-image:none;filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);filter:alpha(opacity=40);-khtml-opacity:.4;-moz-opacity:.4;opacity:.4;cursor:not-allowed;box-shadow:none}
+.iom-button::-moz-focus-inner{padding:0;border:0}
+.iom-button-red{background-color:#f44336;color:#fff}
+.iom-button-white{background-color:#fff;color:#000;border:1px solid #000}
+.iom-button-white:hover{color:#000}
+.iom-button-pink{background-color:#e91e63;color:#fff}
+.iom-button-purple{background-color:#9c27b0;color:#fff}
+.iom-button-deeppurple{background-color:#673ab7;color:#fff}
+.iom-button-indigo{background-color:#3f51b5;color:#fff}
+.iom-button-blue{background-color:#2196f3;color:#fff}
+.iom-button-lightblue{background-color:#03a9f4;color:#fff}
+.iom-button-cyan{background-color:#00bcd4;color:#fff}
+.iom-button-teal{background-color:#009688;color:#fff}
+.iom-button-green{background-color:#4caf50;color:#fff}
+.iom-button-lightgreen{background-color:#8bc34a;color:#fff}
+.iom-button-lime{background-color:#cddc39;color:#000}
+.iom-button-yellow{background-color:#ffeb3b;color:#000}
+.iom-button-amber{background-color:#ffc107;color:#000}
+.iom-button-orange{background-color:#ff9800;color:#000}
+.iom-button-deeporange{background-color:#ff5722;color:#fff}
+.iom-button-brown{background-color:#3e2723;color:#fff}
+.iom-button-grey{background-color:#9e9e9e;color:#fff}
+.iom-button-bluegrey{background-color:#607d8b;color:#fff}
+.iom-button-black{background-color:#000;color:#fff}
+.iom-button-transparent{background-color:transparent;color:#000}
+.iom-button-transparentwhite{background-color:transparent;color:#fff;border:1px solid #fff}
+.iom-button-transparentblack{background-color:transparent;color:#000;border:1px solid #000}
+.iom-button-transparentblack:hover,.iom-button-transparentblack:active,.iom-button-transparentblack:focus{color:#fff;background-color:#000}
+.iom-button-transparentwhite:hover,.iom-button-transparentwhite:active,.iom-button-transparentwhite:focus{color:#000;background-color:#fff}
+
+/* BUTTON LOGO STYLES */
+.iom-button-logo { line-height: inherit; width: inherit; background-image: url(https://www.itson.me/content/widget/IOM-Geo-Logo-White.png); background-size: contain; background-repeat: no-repeat; }
+.iom-button-logo-black { line-height: inherit; width: inherit; background-image: url(https://www.itson.me/content/widget/IOM-Geo-Logo-Black.png); background-size: contain; background-repeat: no-repeat; }
+
+.iom-button-transparentblack:hover .iom-button-logo-black,
+.iom-button-transparentblack:active .iom-button-logo-black,
+.iom-button-transparentblack:focus .iom-button-logo-black
+{background-image: url(https://www.itson.me/content/widget/IOM-Geo-Logo-White.png);}
+
+.iom-button-transparentwhite:hover .iom-button-logo,
+.iom-button-transparentwhite:active .iom-button-logo,
+.iom-button-transparentwhite:focus .iom-button-logo
+{background-image: url(https://www.itson.me/content/widget/IOM-Geo-Logo-Black.png);}

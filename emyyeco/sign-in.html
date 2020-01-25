@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <div>
+            <h2>PHP Form Validation Example</h2>
+<p><span class="error">* required field.</span></p>
+<form method="post" action="http://localhost:8000/index.php">  
+  Name: <input type="text" name="name" value="<?php echo $name;?>">
+  <span class="error"></span>
+  <br><br>
+  E-mail: <input type="text" name="email" value="<?php echo $email;?>">
+  <span class="error"></span>
+  <br><br>
+  Website: <input type="text" name="website" value="<?php echo $website;?>">
+  <span class="error"></span>
+  <br><br>
+  Comment: <textarea name="comment" rows="5" cols="40"></textarea>
+  <br><br>
+  Gender:
+  <input type="radio" name="gender" value="female">Female
+  <input type="radio" name="gender" value="male">Male
+  <span class="error"></span>
+  <br><br>
+  <input type="submit" name="submit" value="Submit">  
+</form>
+            <ul>
+         <li><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="Sign_up">Register</a></li>
+
+         <li><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="Sign_in">Login</a></li>
+            </ul>
+        </div>
+    </body>
+</html>

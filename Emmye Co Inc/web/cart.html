@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><script data-dapp-detection="">
+        (function() {
+          let alreadyInsertedMetaTag = false
+        
+          function __insertDappDetected() {
+            if (!alreadyInsertedMetaTag) {
+              const meta = document.createElement('meta')
+              meta.name = 'dapp-detected'
+              document.head.appendChild(meta)
+              alreadyInsertedMetaTag = true
+            }
+          }
+        
+          if (window.hasOwnProperty('web3')) {
+            // Note a closure can't be used for this var because some sites like
+            // www.wnyc.org do a second script execution via eval for some reason.
+            window.__disableDappDetectionInsertion = true
+            // Likely oldWeb3 is undefined and it has a property only because
+            // we defined it. Some sites like wnyc.org are evaling all scripts
+            // that exist again, so this is protection against multiple calls.
+            if (window.web3 === undefined) {
+              return
+            }
+            if (!window.web3.currentProvider ||
+                !window.web3.currentProvider.isMetaMask) {
+              __insertDappDetected()
+            }
+          } else {
+            var oldWeb3 = window.web3
+            Object.defineProperty(window, 'web3', {
+              configurable: true,
+              set: function (val) {
+                if (!window.__disableDappDetectionInsertion)
+                  __insertDappDetected()
+                oldWeb3 = val
+              },
+              get: function () {
+                if (!window.__disableDappDetectionInsertion)
+                  __insertDappDetected()
+                return oldWeb3
+              }
+            })
+          }
+        })()</script></head><body data-phone-cc-input="1">Array
+        (
+            [params] =&gt; Array
+                (
+                    [accountid] =&gt; 41718
+                    [serviceid] =&gt; 41718
+                    [addonId] =&gt; 0
+                    [userid] =&gt; 52854
+                    [domain] =&gt; bingwasafaris.ac.ke
+                    [username] =&gt; bingwas1
+                    [password] =&gt; 9bV13o3Fmc
+                    [packageid] =&gt; 1
+                    [pid] =&gt; 1
+                    [serverid] =&gt; 7
+                    [status] =&gt; Pending
+                    [type] =&gt; hostingaccount
+                    [producttype] =&gt; hostingaccount
+                    [moduletype] =&gt; cpanel
+                    [configoption1] =&gt; Lite
+                    [configoption2] =&gt; 
+                    [configoption3] =&gt; 
+                    [configoption4] =&gt; 
+                    [configoption5] =&gt; 
+                    [configoption6] =&gt; 
+                    [configoption7] =&gt; 
+                    [configoption8] =&gt; 
+                    [configoption9] =&gt; 
+                    [configoption10] =&gt; 
+                    [configoption11] =&gt; 
+                    [configoption12] =&gt; 
+                    [configoption13] =&gt; 
+                    [configoption14] =&gt; 
+                    [configoption15] =&gt; 
+                    [configoption16] =&gt; 
+                    [configoption17] =&gt; 
+                    [configoption18] =&gt; 
+                    [configoption19] =&gt; 
+                    [configoption20] =&gt; 
+                    [configoption21] =&gt; 
+                    [configoption22] =&gt; 
+                    [configoption23] =&gt; 
+                    [configoption24] =&gt; 
+                    [customfields] =&gt; Array
+                        (
+                        )
+        
+                    [configoptions] =&gt; Array
+                        (
+                        )
+        
+                    [model] =&gt; WHMCS\Service\Service Object
+                        (
+                            [table:protected] =&gt; tblhosting
+                            [columnMap:protected] =&gt; Array
+                                (
+                                    [clientId] =&gt; userid
+                                    [serverId] =&gt; server
+                                    [registrationDate] =&gt; regdate
+                                    [paymentGateway] =&gt; paymentmethod
+                                    [status] =&gt; domainstatus
+                                    [promotionId] =&gt; promoid
+                                    [overrideAutoSuspend] =&gt; overideautosuspend
+                                    [overrideSuspendUntilDate] =&gt; overidesuspenduntil
+                                    [bandwidthUsage] =&gt; bwusage
+                                    [bandwidthLimit] =&gt; bwlimit
+                                    [lastUpdateDate] =&gt; lastupdate
+                                    [recurringFee] =&gt; amount
+                                )
+        
+                            [dates:protected] =&gt; Array
+                                (
+                                    [0] =&gt; registrationDate
+                                    [1] =&gt; nextDueDate
+                                    [2] =&gt; nextInvoiceDate
+                                    [3] =&gt; terminationDate
+                                    [4] =&gt; completedDate
+                                    [5] =&gt; overrideSuspendUntilDate
+                                    [6] =&gt; lastUpdateDate
+                                )
+        
+                            [booleans:protected] =&gt; Array
+                                (
+                                    [0] =&gt; overideautosuspend
+                                )
+        
+                            [appends:protected] =&gt; Array
+                                (
+                                    [0] =&gt; serviceProperties
+                                )
+        
+                            [unique] =&gt; Array
+                                (
+                                )
+        
+                            [guardedForUpdate] =&gt; Array
+                                (
+                                )
+        
+                            [strings:protected] =&gt; Array
+                                (
+                                )
+        
+                            [ints:protected] =&gt; Array
+                                (
+                                )
+        
+                            [semanticVersions:protected] =&gt; Array
+                                (
+                                )
+        
+                            [commaSeparated:protected] =&gt; Array
+                                (
+                                )
+        
+                            [characterSeparated:protected] =&gt; Array
+                                (
+                                )
+        
+                            [connection:protected] =&gt; 
+                            [primaryKey:protected] =&gt; id
+                            [perPage:protected] =&gt; 15
+                            [incrementing] =&gt; 1
+                            [timestamps] =&gt; 1
+                            [attributes:protected] =&gt; Array
+                                (
+                                    [id] =&gt; 41718
+                                    [userid] =&gt; 52854
+                                    [orderid] =&gt; 20661
+                                    [packageid] =&gt; 1
+                                    [server] =&gt; 7
+                                    [regdate] =&gt; 2019-12-05
+                                    [domain] =&gt; bingwasafaris.ac.ke
+                                    [paymentmethod] =&gt; mpesa
+                                    [firstpaymentamount] =&gt; 0.00
+                                    [amount] =&gt; 0.00
+                                    [billingcycle] =&gt; Annually
+                                    [nextduedate] =&gt; 2020-12-05
+                                    [nextinvoicedate] =&gt; 2020-12-05
+                                    [termination_date] =&gt; 0000-00-00
+                                    [completed_date] =&gt; 0000-00-00
+                                    [domainstatus] =&gt; Pending
+                                    [username] =&gt; bingwas1
+                                    [password] =&gt; H84fuEUPwHRwBm0LZMbPBI0+KjyTBR6bh6oRyOwB
+                                    [notes] =&gt; 
+                                    [subscriptionid] =&gt; 
+                                    [promoid] =&gt; 0
+                                    [suspendreason] =&gt; 
+                                    [overideautosuspend] =&gt; 0
+                                    [overidesuspenduntil] =&gt; 0000-00-00
+                                    [dedicatedip] =&gt; 
+                                    [assignedips] =&gt; 
+                                    [ns1] =&gt; 
+                                    [ns2] =&gt; 
+                                    [diskusage] =&gt; 0
+                                    [disklimit] =&gt; 0
+                                    [bwusage] =&gt; 0
+                                    [bwlimit] =&gt; 0
+                                    [lastupdate] =&gt; 0000-00-00 00:00:00
+                                    [created_at] =&gt; 0000-00-00 00:00:00
+                                    [updated_at] =&gt; 0000-00-00 00:00:00
+                                )
+        
+                            [original:protected] =&gt; Array
+                                (
+                                    [id] =&gt; 41718
+                                    [userid] =&gt; 52854
+                                    [orderid] =&gt; 20661
+                                    [packageid] =&gt; 1
+                                    [server] =&gt; 7
+                                    [regdate] =&gt; 2019-12-05
+                                    [domain] =&gt; bingwasafaris.ac.ke
+                                    [paymentmethod] =&gt; mpesa
+                                    [firstpaymentamount] =&gt; 0.00
+                                    [amount] =&gt; 0.00
+                                    [billingcycle] =&gt; Annually
+                                    [nextduedate] =&gt; 2020-12-05
+                                    [nextinvoicedate] =&gt; 2020-12-05
+                                    [termination_date] =&gt; 0000-00-00
+                                    [completed_date] =&gt; 0000-00-00
+                                    [domainstatus] =&gt; Pending
+                                    [username] =&gt; bingwas1
+                                    [password] =&gt; H84fuEUPwHRwBm0LZMbPBI0+KjyTBR6bh6oRyOwB
+                                    [notes] =&gt; 
+                                    [subscriptionid] =&gt; 
+                                    [promoid] =&gt; 0
+                                    [suspendreason] =&gt; 
+                                    [overideautosuspend] =&gt; 0
+                                    [overidesuspenduntil] =&gt; 0000-00-00
+                                    [dedicatedip] =&gt; 
+                                    [assignedips] =&gt; 
+                                    [ns1] =&gt; 
+                                    [ns2] =&gt; 
+                                    [diskusage] =&gt; 0
+                                    [disklimit] =&gt; 0
+                                    [bwusage] =&gt; 0
+                                    [bwlimit] =&gt; 0
+                                    [lastupdate] =&gt; 0000-00-00 00:00:00
+                                    [created_at] =&gt; 0000-00-00 00:00:00
+                                    [updated_at] =&gt; 0000-00-00 00:00:00
+                                )
+        
+                            [relations:protected] =&gt; Array
+                                (
+                                    [product] =&gt; WHMCS\Product\Product Object
+                                        (
+                                            [table:protected] =&gt; tblproducts
+                                            [columnMap:protected] =&gt; Array
+                                                (
+                                                    [productGroupId] =&gt; gid
+                                                    [isHidden] =&gt; hidden
+                                                    [welcomeEmailTemplateId] =&gt; welcomeemail
+                                                    [stockControlEnabled] =&gt; stockcontrol
+                                                    [quantityInStock] =&gt; qty
+                                                    [proRataChargeDayOfCurrentMonth] =&gt; proratadate
+                                                    [proRataChargeNextMonthAfterDay] =&gt; proratachargenextmonth
+                                                    [paymentType] =&gt; paytype
+                                                    [allowMultipleQuantities] =&gt; allowqty
+                                                    [freeSubDomains] =&gt; subdomain
+                                                    [module] =&gt; servertype
+                                                    [serverGroupId] =&gt; servergroup
+                                                    [moduleConfigOption1] =&gt; configoption1
+                                                    [moduleConfigOption2] =&gt; configoption2
+                                                    [moduleConfigOption3] =&gt; configoption3
+                                                    [moduleConfigOption4] =&gt; configoption4
+                                                    [moduleConfigOption5] =&gt; configoption5
+                                                    [moduleConfigOption6] =&gt; configoption6
+                                                    [moduleConfigOption7] =&gt; configoption7
+                                                    [moduleConfigOption8] =&gt; configoption8
+                                                    [moduleConfigOption9] =&gt; configoption9
+                                                    [moduleConfigOption10] =&gt; configoption10
+                                                    [moduleConfigOption11] =&gt; configoption11
+                                                    [moduleConfigOption12] =&gt; configoption12
+                                                    [moduleConfigOption13] =&gt; configoption13
+                                                    [moduleConfigOption14] =&gt; configoption14
+                                                    [moduleConfigOption15] =&gt; configoption15
+                                                    [moduleConfigOption16] =&gt; configoption16
+                                                    [moduleConfigOption17] =&gt; configoption17
+                                                    [moduleConfigOption18] =&gt; configoption18
+                                                    [moduleConfigOption19] =&gt; configoption19
+                                                    [moduleConfigOption20] =&gt; configoption20
+                                                    [moduleConfigOption21] =&gt; configoption21
+                                                    [moduleConfigOption22] =&gt; configoption22
+                                                    [moduleConfigOption23] =&gt; configoption23
+                                                    [moduleConfigOption24] =&gt; configoption24
+                                                    [recurringCycleLimit] =&gt; recurringcycles
+                                                    [daysAfterSignUpUntilAutoTermination] =&gt; autoterminatedays
+                                                    [autoTerminationEmailTemplateId] =&gt; autoterminateemail
+                                                    [allowConfigOptionUpgradeDowngrade] =&gt; configoptionsupgrade
+                                                    [upgradeEmailTemplateId] =&gt; upgradeemail
+                                                    [enableOverageBillingAndUnits] =&gt; overagesenabled
+                                                    [overageDiskLimit] =&gt; overagesdisklimit
+                                                    [overageBandwidthLimit] =&gt; overagesbwlimit
+                                                    [overageDiskPrice] =&gt; overagesdiskprice
+                                                    [overageBandwidthPrice] =&gt; overagesbwprice
+                                                    [applyTax] =&gt; tax
+                                                    [affiliatePayoutOnceOnly] =&gt; affiliateonetime
+                                                    [affiliatePaymentType] =&gt; affiliatepaytype
+                                                    [affiliatePaymentAmount] =&gt; affiliatepayamount
+                                                    [isRetired] =&gt; retired
+                                                    [displayOrder] =&gt; order
+                                                )
+        
+                                            [booleans:protected] =&gt; Array
+                                                (
+                                                    [0] =&gt; isHidden
+                                                    [1] =&gt; showDomainOptions
+                                                    [2] =&gt; stockControlEnabled
+                                                    [3] =&gt; proRataBilling
+                                                    [4] =&gt; allowConfigOptionUpgradeDowngrade
+                                                    [5] =&gt; applyTax
+                                                    [6] =&gt; affiliatePayoutOnceOnly
+                                                    [7] =&gt; isRetired
+                                                    [8] =&gt; isFeatured
+                                                )
+        
+                                            [strings:protected] =&gt; Array
+                                                (
+                                                    [0] =&gt; description
+                                                    [1] =&gt; autoSetup
+                                                    [2] =&gt; module
+                                                    [3] =&gt; moduleConfigOption1
+                                                    [4] =&gt; moduleConfigOption2
+                                                    [5] =&gt; moduleConfigOption3
+                                                    [6] =&gt; moduleConfigOption4
+                                                    [7] =&gt; moduleConfigOption5
+                                                    [8] =&gt; moduleConfigOption6
+                                                    [9] =&gt; moduleConfigOption7
+                                                    [10] =&gt; moduleConfigOption8
+                                                    [11] =&gt; moduleConfigOption9
+                                                    [12] =&gt; moduleConfigOption10
+                                                    [13] =&gt; moduleConfigOption11
+                                                    [14] =&gt; moduleConfigOption12
+                                                    [15] =&gt; moduleConfigOption13
+                                                    [16] =&gt; moduleConfigOption14
+                                                    [17] =&gt; moduleConfigOption15
+                                                    [18] =&gt; moduleConfigOption16
+                                                    [19] =&gt; moduleConfigOption17
+                                                    [20] =&gt; moduleConfigOption18
+                                                    [21] =&gt; moduleConfigOption19
+                                                    [22] =&gt; moduleConfigOption20
+                                                    [23] =&gt; moduleConfigOption21
+                                                    [24] =&gt; moduleConfigOption22
+                                                    [25] =&gt; moduleConfigOption23
+                                                    [26] =&gt; moduleConfigOption24
+                                                )
+        
+                                            [ints:protected] =&gt; Array
+                                                (
+                                                    [0] =&gt; welcomeEmailTemplateId
+                                                    [1] =&gt; quantityInStock
+                                                    [2] =&gt; proRataChargeDayOfCurrentMonth
+                                                    [3] =&gt; proRataChargeNextMonthAfterDay
+                                                    [4] =&gt; serverGroupId
+                                                    [5] =&gt; displayOrder
+                                                )
+        
+                                            [commaSeparated:protected] =&gt; Array
+                                                (
+                                                    [0] =&gt; freeSubDomains
+                                                    [1] =&gt; freeDomainPaymentTerms
+                                                    [2] =&gt; freeDomainTlds
+                                                    [3] =&gt; enableOverageBillingAndUnits
+                                                )
+        
+                                            [unique] =&gt; Array
+                                                (
+                                                )
+        
+                                            [guardedForUpdate] =&gt; Array
+                                                (
+                                                )
+        
+                                            [semanticVersions:protected] =&gt; Array
+                                                (
+                                                )
+        
+                                            [characterSeparated:protected] =&gt; Array
+                                                (
+                                                )
+        
+                                            [connection:protected] =&gt; 
+                                            [primaryKey:protected] =&gt; id
+                                            [perPage:protected] =&gt; 15
+                                            [incrementing] =&gt; 1
+                                            [timestamps] =&gt; 1
+                                            [attributes:protected] =&gt; Array
+                                                (
+                                                    [id] =&gt; 1
+                                                    [type] =&gt; hostingaccount
+                                                    [gid] =&gt; 1
+                                                    [name] =&gt; LITE
+                                                    [description] =&gt; 50 MB Space,
+        5 Email Accounts, <br>
+        3 Sub Domains, <br>
+        2 FTP Accounts. <br>
+        Free Website Builder <br>
+        Unlimited Bandwidth <br>
+                                                    [hidden] =&gt; 1
+                                                    [showdomainoptions] =&gt; 1
+                                                    [welcomeemail] =&gt; 1
+                                                    [stockcontrol] =&gt; 0
+                                                    [qty] =&gt; 0
+                                                    [proratabilling] =&gt; 0
+                                                    [proratadate] =&gt; 0
+                                                    [proratachargenextmonth] =&gt; 0
+                                                    [paytype] =&gt; recurring
+                                                    [allowqty] =&gt; 0
+                                                    [subdomain] =&gt; 
+                                                    [autosetup] =&gt; payment
+                                                    [servertype] =&gt; cpanel
+                                                    [servergroup] =&gt; 0
+                                                    [configoption1] =&gt; Lite
+                                                    [configoption2] =&gt; 
+                                                    [configoption3] =&gt; 
+                                                    [configoption4] =&gt; 
+                                                    [configoption5] =&gt; 
+                                                    [configoption6] =&gt; 
+                                                    [configoption7] =&gt; 
+                                                    [configoption8] =&gt; 
+                                                    [configoption9] =&gt; 
+                                                    [configoption10] =&gt; 
+                                                    [configoption11] =&gt; 
+                                                    [configoption12] =&gt; 
+                                                    [configoption13] =&gt; 
+                                                    [configoption14] =&gt; 
+                                                    [configoption15] =&gt; 
+                                                    [configoption16] =&gt; 
+                                                    [configoption17] =&gt; 
+                                                    [configoption18] =&gt; 
+                                                    [configoption19] =&gt; 
+                                                    [configoption20] =&gt; 
+                                                    [configoption21] =&gt; 
+                                                    [configoption22] =&gt; 
+                                                    [configoption23] =&gt; 
+                                                    [configoption24] =&gt; 
+                                                    [freedomain] =&gt; 
+                                                    [freedomainpaymentterms] =&gt; annually,biennially,triennially
+                                                    [freedomaintlds] =&gt; .co.ke,.com,.net,.org,.biz,.info,.ac.ke,.info.ke,.me.ke,.sc.ke,.ne.ke
+                                                    [recurringcycles] =&gt; 0
+                                                    [autoterminatedays] =&gt; 0
+                                                    [autoterminateemail] =&gt; 0
+                                                    [configoptionsupgrade] =&gt; 0
+                                                    [billingcycleupgrade] =&gt; 
+                                                    [upgradeemail] =&gt; 0
+                                                    [overagesenabled] =&gt; 
+                                                    [overagesdisklimit] =&gt; 0
+                                                    [overagesbwlimit] =&gt; 0
+                                                    [overagesdiskprice] =&gt; 0.0000
+                                                    [overagesbwprice] =&gt; 0.0000
+                                                    [tax] =&gt; 0
+                                                    [affiliateonetime] =&gt; 0
+                                                    [affiliatepaytype] =&gt; 
+                                                    [affiliatepayamount] =&gt; 0.00
+                                                    [order] =&gt; 7
+                                                    [retired] =&gt; 0
+                                                    [is_featured] =&gt; 0
+                                                    [created_at] =&gt; 2017-11-24 17:09:15
+                                                    [updated_at] =&gt; 2017-12-11 22:38:35
+                                                )
+        
+                                            [original:protected] =&gt; Array
+                                                (
+                                                    [id] =&gt; 1
+                                                    [type] =&gt; hostingaccount
+                                                    [gid] =&gt; 1
+                                                    [name] =&gt; LITE
+                                                    [description] =&gt; 50 MB Space,
+        5 Email Accounts, <br>
+        3 Sub Domains, <br>
+        2 FTP Accounts. <br>
+        Free Website Builder <br>
+        Unlimited Bandwidth <br>
+                                                    [hidden] =&gt; 1
+                                                    [showdomainoptions] =&gt; 1
+                                                    [welcomeemail] =&gt; 1
+                                                    [stockcontrol] =&gt; 0
+                                                    [qty] =&gt; 0
+                                                    [proratabilling] =&gt; 0
+                                                    [proratadate] =&gt; 0
+                                                    [proratachargenextmonth] =&gt; 0
+                                                    [paytype] =&gt; recurring
+                                                    [allowqty] =&gt; 0
+                                                    [subdomain] =&gt; 
+                                                    [autosetup] =&gt; payment
+                                                    [servertype] =&gt; cpanel
+                                                    [servergroup] =&gt; 0
+                                                    [configoption1] =&gt; Lite
+                                                    [configoption2] =&gt; 
+                                                    [configoption3] =&gt; 
+                                                    [configoption4] =&gt; 
+                                                    [configoption5] =&gt; 
+                                                    [configoption6] =&gt; 
+                                                    [configoption7] =&gt; 
+                                                    [configoption8] =&gt; 
+                                                    [configoption9] =&gt; 
+                                                    [configoption10] =&gt; 
+                                                    [configoption11] =&gt; 
+                                                    [configoption12] =&gt; 
+                                                    [configoption13] =&gt; 
+                                                    [configoption14] =&gt; 
+                                                    [configoption15] =&gt; 
+                                                    [configoption16] =&gt; 
+                                                    [configoption17] =&gt; 
+                                                    [configoption18] =&gt; 
+                                                    [configoption19] =&gt; 
+                                                    [configoption20] =&gt; 
+                                                    [configoption21] =&gt; 
+                                                    [configoption22] =&gt; 
+                                                    [configoption23] =&gt; 
+                                                    [configoption24] =&gt; 
+                                                    [freedomain] =&gt; 
+                                                    [freedomainpaymentterms] =&gt; annually,biennially,triennially
+                                                    [freedomaintlds] =&gt; .co.ke,.com,.net,.org,.biz,.info,.ac.ke,.info.ke,.me.ke,.sc.ke,.ne.ke
+                                                    [recurringcycles] =&gt; 0
+                                                    [autoterminatedays] =&gt; 0
+                                                    [autoterminateemail] =&gt; 0
+                                                    [configoptionsupgrade] =&gt; 0
+                                                    [billingcycleupgrade] =&gt; 
+                                                    [upgradeemail] =&gt; 0
+                                                    [overagesenabled] =&gt; 
+                                                    [overagesdisklimit] =&gt; 0
+                                                    [overagesbwlimit] =&gt; 0
+                                                    [overagesdiskprice] =&gt; 0.0000
+                                                    [overagesbwprice] =&gt; 0.0000
+                                                    [tax] =&gt; 0
+                                                    [affiliateonetime] =&gt; 0
+                                                    [affiliatepaytype] =&gt; 
+                                                    [affiliatepayamount] =&gt; 0.00
+                                                    [order] =&gt; 7
+                                                    [retired] =&gt; 0
+                                                    [is_featured] =&gt; 0
+                                                    [created_at] =&gt; 2017-11-24 17:09:15
+                                                    [updated_at] =&gt; 2017-12-11 22:38:35
+                                                )
+        
+                                            [relations:protected] =&gt; Array
+                                                (
+                                                )
+        
+                                            [hidden:protected] =&gt; Array
+                                                (
+                                                )
+        
+                                            [visible:protected] =&gt; Array
+                                                (
+                                                )
+        
+                                            [appends:protected] =&gt; Array
+                                                (
+                                                )
+        
+                                            [fillable:protected] =&gt; Array
+                                                (
+                                                )
+        
+                                            [guarded:protected] =&gt; Array
+                                                (
+                                                    [0] =&gt; *
+                                                )
+        
+                                            [dates:protected] =&gt; Array
+                                                (
+                                                )
+        
+                                            [dateFormat:protected] =&gt; 
+                                            [casts:protected] =&gt; Array
+                                                (
+                                                )
+        
+                                            [touches:protected] =&gt; Array
+                                                (
+                                                )
+        
+                                            [observables:protected] =&gt; Array
+                                                (
+                                                )
+        
+                                            [with:protected] =&gt; Array
+                                                (
+                                                )
+        
+                                            [morphClass:protected] =&gt; 
+                                            [exists] =&gt; 1
+                                            [wasRecentlyCreated] =&gt; 
+                                        )
+        
+                                    [client] =&gt; WHMCS\User\Client Object
+                                        (
+                                            [table:protected] =&gt; tblclients
+                                            [columnMap:protected] =&gt; Array
+                                                (
+                                                    [passwordHash] =&gt; password
+                                                    [twoFactorAuthModule] =&gt; authmodule
+                                                    [twoFactorAuthData] =&gt; authdata
+                                                    [currencyId] =&gt; currency
+                                                    [defaultPaymentGateway] =&gt; defaultgateway
+                                                    [overrideLateFee] =&gt; latefeeoveride
+                                                    [overrideOverdueNotices] =&gt; overideduenotices
+                                                    [disableAutomaticCreditCardProcessing] =&gt; disableautocc
+                                                    [billingContactId] =&gt; billingcid
+                                                    [securityQuestionId] =&gt; securityqid
+                                                    [securityQuestionAnswer] =&gt; securityqans
+                                                    [creditCardType] =&gt; cardtype
+                                                    [creditCardLastFourDigits] =&gt; cardlastfour
+                                                    [creditCardExpiryDate] =&gt; expdate
+                                                    [storedBankNameCrypt] =&gt; bankname
+                                                    [storedBankTypeCrypt] =&gt; banktype
+                                                    [storedBankCodeCrypt] =&gt; bankcode
+                                                    [storedBankAccountCrypt] =&gt; bankacct
+                                                    [paymentGatewayToken] =&gt; gatewayid
+                                                    [lastLoginDate] =&gt; lastlogin
+                                                    [lastLoginIp] =&gt; ip
+                                                    [lastLoginHostname] =&gt; host
+                                                    [passwordResetKey] =&gt; pwresetkey
+                                                    [passwordResetKeyRequestDate] =&gt; pwresetexpiry
+                                                )
+        
+                                            [timestamps] =&gt; 1
+                                            [dates:protected] =&gt; Array
+                                                (
+                                                    [0] =&gt; lastLoginDate
+                                                    [1] =&gt; passwordResetKeyRequestDate
+                                                )
+        
+                                            [booleans:protected] =&gt; Array
+                                                (
+                                                    [0] =&gt; taxExempt
+                                                    [1] =&gt; overrideLateFee
+                                                    [2] =&gt; overrideOverdueNotices
+                                                    [3] =&gt; separateInvoices
+                                                    [4] =&gt; disableAutomaticCreditCardProcessing
+                                                    [5] =&gt; emailOptOut
+                                                    [6] =&gt; overrideAutoClose
+                                                    [7] =&gt; emailVerified
+                                                )
+        
+                                            [unique] =&gt; Array
+                                                (
+                                                    [0] =&gt; email
+                                                )
+        
+                                            [appends:protected] =&gt; Array
+                                                (
+                                                    [0] =&gt; fullName
+                                                    [1] =&gt; countryName
+                                                )
+        
+                                            [fillable:protected] =&gt; Array
+                                                (
+                                                    [0] =&gt; lastlogin
+                                                    [1] =&gt; ip
+                                                    [2] =&gt; host
+                                                    [3] =&gt; pwresetkey
+                                                    [4] =&gt; pwresetexpiry
+                                                )
+        
+                                            [guardedForUpdate] =&gt; Array
+                                                (
+                                                )
+        
+                                            [strings:protected] =&gt; Array
+                                                (
+                                                )
+        
+                                            [ints:protected] =&gt; Array
+                                                (
+                                                )
+        
+                                            [semanticVersions:protected] =&gt; Array
+                                                (
+                                                )
+        
+                                            [commaSeparated:protected] =&gt; Array
+                                                (
+                                                )
+        
+                                            [characterSeparated:protected] =&gt; Array
+                                                (
+                                                )
+        
+                                            [connection:protected] =&gt; 
+                                            [primaryKey:protected] =&gt; id
+                                            [perPage:protected] =&gt; 15
+                                            [incrementing] =&gt; 1
+                                            [attributes:protected] =&gt; Array
+                                                (
+                                                    [id] =&gt; 52854
+                                                    [uuid] =&gt; 165efe6c-6844-4c7d-b15f-777d364ef69d
+                                                    [firstname] =&gt; Stephen
+                                                    [lastname] =&gt; Karitu
+                                                    [companyname] =&gt; 
+                                                    [email] =&gt; karitustephen@gmail.com
+                                                    [address1] =&gt; 001koinange street
+                                                    [address2] =&gt; 
+                                                    [city] =&gt; Nairobi
+                                                    [state] =&gt; Ngewa
+                                                    [postcode] =&gt; 00901
+                                                    [country] =&gt; KE
+                                                    [phonenumber] =&gt; +254.720 989818
+                                                    [password] =&gt; $2y$10$cjSIXWqjXp0ScV8YLzlKt.D.Y/SpbMr.h7v1yKQNeYNH39YE./0/O
+                                                    [authmodule] =&gt; 
+                                                    [authdata] =&gt; 
+                                                    [currency] =&gt; 1
+                                                    [defaultgateway] =&gt; 
+                                                    [credit] =&gt; 0.00
+                                                    [taxexempt] =&gt; 0
+                                                    [latefeeoveride] =&gt; 0
+                                                    [overideduenotices] =&gt; 0
+                                                    [separateinvoices] =&gt; 0
+                                                    [disableautocc] =&gt; 0
+                                                    [datecreated] =&gt; 2019-12-05
+                                                    [notes] =&gt; 
+                                                    [billingcid] =&gt; 0
+                                                    [securityqid] =&gt; 0
+                                                    [securityqans] =&gt; ZzoqW1rJF5BdwRrAem4EnQ+jKho=
+                                                    [groupid] =&gt; 0
+                                                    [cardtype] =&gt; 
+                                                    [cardlastfour] =&gt; 
+                                                    [cardnum] =&gt; 
+                                                    [startdate] =&gt; 
+                                                    [expdate] =&gt; 
+                                                    [issuenumber] =&gt; 
+                                                    [bankname] =&gt; 
+                                                    [banktype] =&gt; 
+                                                    [bankcode] =&gt; 
+                                                    [bankacct] =&gt; 
+                                                    [gatewayid] =&gt; 
+                                                    [lastlogin] =&gt; 2019-12-05 03:58:57
+                                                    [ip] =&gt; 197.156.190.198
+                                                    [host] =&gt; chui.telkom.co.ke
+                                                    [status] =&gt; Active
+                                                    [language] =&gt; 
+                                                    [pwresetkey] =&gt; 
+                                                    [emailoptout] =&gt; 0
+                                                    [overrideautoclose] =&gt; 0
+                                                    [allow_sso] =&gt; 1
+                                                    [email_verified] =&gt; 0
+                                                    [created_at] =&gt; 0000-00-00 00:00:00
+                                                    [updated_at] =&gt; 0000-00-00 00:00:00
+                                                    [pwresetexpiry] =&gt; 0000-00-00 00:00:00
+                                                )
+        
+                                            [original:protected] =&gt; Array
+                                                (
+                                                    [id] =&gt; 52854
+                                                    [uuid] =&gt; 165efe6c-6844-4c7d-b15f-777d364ef69d
+                                                    [firstname] =&gt; Stephen
+                                                    [lastname] =&gt; Karitu
+                                                    [companyname] =&gt; 
+                                                    [email] =&gt; karitustephen@gmail.com
+                                                    [address1] =&gt; 001koinange street
+                                                    [address2] =&gt; 
+                                                    [city] =&gt; Nairobi
+                                                    [state] =&gt; Ngewa
+                                                    [postcode] =&gt; 00901
+                                                    [country] =&gt; KE
+                                                    [phonenumber] =&gt; +254.720 989818
+                                                    [password] =&gt; $2y$10$cjSIXWqjXp0ScV8YLzlKt.D.Y/SpbMr.h7v1yKQNeYNH39YE./0/O
+                                                    [authmodule] =&gt; 
+                                                    [authdata] =&gt; 
+                                                    [currency] =&gt; 1
+                                                    [defaultgateway] =&gt; 
+                                                    [credit] =&gt; 0.00
+                                                    [taxexempt] =&gt; 0
+                                                    [latefeeoveride] =&gt; 0
+                                                    [overideduenotices] =&gt; 0
+                                                    [separateinvoices] =&gt; 0
+                                                    [disableautocc] =&gt; 0
+                                                    [datecreated] =&gt; 2019-12-05
+                                                    [notes] =&gt; 
+                                                    [billingcid] =&gt; 0
+                                                    [securityqid] =&gt; 0
+                                                    [securityqans] =&gt; ZzoqW1rJF5BdwRrAem4EnQ+jKho=
+                                                    [groupid] =&gt; 0
+                                                    [cardtype] =&gt; 
+                                                    [cardlastfour] =&gt; 
+                                                    [cardnum] =&gt; 
+                                                    [startdate] =&gt; 
+                                                    [expdate] =&gt; 
+                                                    [issuenumber] =&gt; 
+                                                    [bankname] =&gt; 
+                                                    [banktype] =&gt; 
+                                                    [bankcode] =&gt; 
+                                                    [bankacct] =&gt; 
+                                                    [gatewayid] =&gt; 
+                                                    [lastlogin] =&gt; 2019-12-05 03:58:57
+                                                    [ip] =&gt; 197.156.190.198
+                                                    [host] =&gt; chui.telkom.co.ke
+                                                    [status] =&gt; Active
+                                                    [language] =&gt; 
+                                                    [pwresetkey] =&gt; 
+                                                    [emailoptout] =&gt; 0
+                                                    [overrideautoclose] =&gt; 0
+                                                    [allow_sso] =&gt; 1
+                                                    [email_verified] =&gt; 0
+                                                    [created_at] =&gt; 0000-00-00 00:00:00
+                                                    [updated_at] =&gt; 0000-00-00 00:00:00
+                                                    [pwresetexpiry] =&gt; 0000-00-00 00:00:00
+                                                )
+        
+                                            [relations:protected] =&gt; Array
+                                                (
+                                                )
+        
+                                            [hidden:protected] =&gt; Array
+                                                (
+                                                )
+        
+                                            [visible:protected] =&gt; Array
+                                                (
+                                                )
+        
+                                            [guarded:protected] =&gt; Array
+                                                (
+                                                    [0] =&gt; *
+                                                )
+        
+                                            [dateFormat:protected] =&gt; 
+                                            [casts:protected] =&gt; Array
+                                                (
+                                                )
+        
+                                            [touches:protected] =&gt; Array
+                                                (
+                                                )
+        
+                                            [observables:protected] =&gt; Array
+                                                (
+                                                )
+        
+                                            [with:protected] =&gt; Array
+                                                (
+                                                )
+        
+                                            [morphClass:protected] =&gt; 
+                                            [exists] =&gt; 1
+                                            [wasRecentlyCreated] =&gt; 
+                                        )
+        
+                                )
+        
+                            [hidden:protected] =&gt; Array
+                                (
+                                )
+        
+                            [visible:protected] =&gt; Array
+                                (
+                                )
+        
+                            [fillable:protected] =&gt; Array
+                                (
+                                )
+        
+                            [guarded:protected] =&gt; Array
+                                (
+                                    [0] =&gt; *
+                                )
+        
+                            [dateFormat:protected] =&gt; 
+                            [casts:protected] =&gt; Array
+                                (
+                                )
+        
+                            [touches:protected] =&gt; Array
+                                (
+                                )
+        
+                            [observables:protected] =&gt; Array
+                                (
+                                )
+        
+                            [with:protected] =&gt; Array
+                                (
+                                )
+        
+                            [morphClass:protected] =&gt; 
+                            [exists] =&gt; 1
+                            [wasRecentlyCreated] =&gt; 
+                        )
+        
+                    [server] =&gt; 1
+                    [serverip] =&gt; 197.248.5.22
+                    [serverhostname] =&gt; host22.safaricombusiness.co.ke
+                    [serverusername] =&gt; ebt
+                    [serverpassword] =&gt; (9]Zb!RqUWs;
+                    [serveraccesshash] =&gt; 
+                    [serversecure] =&gt; on
+                    [serverhttpprefix] =&gt; https
+                    [serverport] =&gt; 2087
+                    [clientsdetails] =&gt; Array
+                        (
+                            [userid] =&gt; 52854
+                            [id] =&gt; 52854
+                            [uuid] =&gt; 165efe6c-6844-4c7d-b15f-777d364ef69d
+                            [firstname] =&gt; Stephen
+                            [lastname] =&gt; Karitu
+                            [fullname] =&gt; Stephen Karitu
+                            [companyname] =&gt; 
+                            [email] =&gt; karitustephen@gmail.com
+                            [address1] =&gt; 001koinange street
+                            [address2] =&gt; 
+                            [city] =&gt; Nairobi
+                            [fullstate] =&gt; Ngewa
+                            [state] =&gt; Ngewa
+                            [postcode] =&gt; 00901
+                            [countrycode] =&gt; KE
+                            [country] =&gt; KE
+                            [phonenumber] =&gt; 720989818
+                            [password] =&gt; $2y$10$cjSIXWqjXp0ScV8YLzlKt.D.Y/SpbMr.h7v1yKQNeYNH39YE./0/O
+                            [statecode] =&gt; Ngewa
+                            [countryname] =&gt; Kenya
+                            [phonecc] =&gt; 254
+                            [phonenumberformatted] =&gt; +254.720989818
+                            [telephoneNumber] =&gt; +254.720989818
+                            [billingcid] =&gt; 0
+                            [notes] =&gt; 
+                            [twofaenabled] =&gt; 
+                            [currency] =&gt; 1
+                            [defaultgateway] =&gt; 
+                            [cctype] =&gt; 
+                            [cclastfour] =&gt; 
+                            [gatewayid] =&gt; 
+                            [securityqid] =&gt; 0
+                            [securityqans] =&gt; 
+                            [groupid] =&gt; 0
+                            [status] =&gt; Active
+                            [credit] =&gt; 0.00
+                            [taxexempt] =&gt; 
+                            [latefeeoveride] =&gt; 
+                            [overideduenotices] =&gt; 
+                            [separateinvoices] =&gt; 
+                            [disableautocc] =&gt; 
+                            [emailoptout] =&gt; 
+                            [overrideautoclose] =&gt; 
+                            [allowSingleSignOn] =&gt; 1
+                            [language] =&gt; 
+                            [lastlogin] =&gt; Date: 05/12/2019 03:58<br>IP Address: 197.156.190.198<br>Host: chui.telkom.co.ke
+                            [customfields1] =&gt; National Identification Document
+                            [customfields] =&gt; Array
+                                (
+                                    [0] =&gt; Array
+                                        (
+                                            [id] =&gt; 2
+                                            [value] =&gt; National Identification Document
+                                        )
+        
+                                    [1] =&gt; Array
+                                        (
+                                            [id] =&gt; 1
+                                            [value] =&gt; 33228106
+                                        )
+        
+                                )
+        
+                            [customfields2] =&gt; 33228106
+                        )
+        
+                )
+        
+        )
+        Login Successful!
+        
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Shopping Cart - Safaricom Cloud Services</title>
+        
+        <link rel="shortcut icon" type="image/x-icon" href="https://www.safaricom.co.ke/images/icons/new/favicon-16x16.png">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+        <!-- WHMCS Styling -->
+        <link href="/templates/safaricom/css/all.min.css?v=eeaa14" rel="stylesheet">
+        
+        <script type="text/javascript">
+            var csrfToken = '31bcad695b611a494f878d4c944ab48d4f66ea76',
+                markdownGuide = 'Markdown Guide',
+                locale = 'en',
+                saved = 'saved',
+                saving = 'autosaving';
+        </script>
+        <script src="/templates/safaricom/js/scripts.min.js?v=eeaa14"></script>
+        
+        
+        <link href="/templates/safaricom/html/css/style.css" rel="stylesheet" type="text/css">
+        <link href="/templates/safaricom/html/css/menu.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="/templates/safaricom/html/js/dropdown.js"></script>
+        
+        <!--Font Awesome -->
+        <link href="/templates/safaricom/html/css/font-awesome.min.css" rel="stylesheet">
+        
+        <!-- WHMCS Overrides -->
+        <link href="/templates/safaricom/css/whmcs-overrides.min.css" rel="stylesheet">
+        
+        <!-- Custom Styling -->
+        <link href="/templates/safaricom/css/custom.css" rel="stylesheet">
+        
+        
+        
+        
+        
+        
+        <div class="wrapper">
+          <div class="header_box">
+            <div class="logo"><a href="/index.php"></a></div>
+            <div id="mainnav">
+              <ul>
+                <li><a href="/index.php">Home</a>
+                </li>
+                <li><a href="/sharedhosting.php">Hosting</a>
+                <ul style="overflow: hidden; height: auto; display: none;">
+                  <li><a href="/sharedhosting.php">Shared Hosting</a></li>
+                  
+                </ul>
+                </li>
+                <li><a href="/domainchecker.php">Domains</a>
+                </li>
+                <li><a href="/clientarea.php">Client Area Login</a>
+                </li>
+                <li class="current"><a href="/cart.php">Order Today</a>
+                </li>
+              </ul>
+              <!--nav--> 
+            </div>
+            <!--header_box--> 
+          </div>
+          <div class="clear"></div>
+          <!--wrapper--> 
+        </div>
+        <div class="main_contentbox">
+        <div class="sub_banner_head">
+          <div class="wrapper">
+            <div class="sub_banner">
+              <h1>Shopping Cart</h1>
+              <p>You are here: <a href="cart.php">Shopping Cart</a></p>
+              <!--sub_banner--> 
+            </div>
+            <div class="clear"></div>
+            <!--wrapper--> 
+          </div>
+          <!--sub_banner_con--> 
+        </div>
+        <div class="clear"></div>
+        <div class="grey_con">
+        <div class="wrapper">
+        <div id="whmcsthemes">
+        <section id="header">
+          <div class="container">
+            <ul class="top-nav">
+                    <li> <a href="#" class="choose-language" data-toggle="popover" id="languageChooser" data-original-title="" title=""> English <b class="caret"></b> </a>
+                <div id="languageChooserContent" class="hidden">
+                  <ul>
+                                <li> <a href="/cart.php?a=complete&amp;language=arabic">العربية</a> </li>
+                                <li> <a href="/cart.php?a=complete&amp;language=azerbaijani">Azerbaijani</a> </li>
+                                <li> <a href="/cart.php?a=complete&amp;language=catalan">Català</a> </li>
+                                <li> <a href="/cart.php?a=complete&amp;language=chinese">中文</a> </li>
+                                <li> <a href="/cart.php?a=complete&amp;language=croatian">Hrvatski</a> </li>
+                                <li> <a href="/cart.php?a=complete&amp;language=czech">Čeština</a> </li>
+                                <li> <a href="/cart.php?a=complete&amp;language=danish">Dansk</a> </li>
+                                <li> <a href="/cart.php?a=complete&amp;language=dutch">Nederlands</a> </li>
+                                <li> <a href="/cart.php?a=complete&amp;language=english">English</a> </li>
+                                <li> <a href="/cart.php?a=complete&amp;language=estonian">Estonian</a> </li>
+                                <li> <a href="/cart.php?a=complete&amp;language=farsi">Persian</a> </li>
+                                <li> <a href="/cart.php?a=complete&amp;language=french">Français</a> </li>
+                                <li> <a href="/cart.php?a=complete&amp;language=german">Deutsch</a> </li>
+                                <li> <a href="/cart.php?a=complete&amp;language=hebrew">עברית</a> </li>
+                                <li> <a href="/cart.php?a=complete&amp;language=hungarian">Magyar</a> </li>
+                                <li> <a href="/cart.php?a=complete&amp;language=italian">Italiano</a> </li>
+                                <li> <a href="/cart.php?a=complete&amp;language=macedonian">Macedonian</a> </li>
+                                <li> <a href="/cart.php?a=complete&amp;language=norwegian">Norwegian</a> </li>
+                                <li> <a href="/cart.php?a=complete&amp;language=portuguese-br">Português</a> </li>
+                                <li> <a href="/cart.php?a=complete&amp;language=portuguese-pt">Português</a> </li>
+                                <li> <a href="/cart.php?a=complete&amp;language=romanian">Română</a> </li>
+                                <li> <a href="/cart.php?a=complete&amp;language=russian">Русский</a> </li>
+                                <li> <a href="/cart.php?a=complete&amp;language=spanish">Español</a> </li>
+                                <li> <a href="/cart.php?a=complete&amp;language=swedish">Svenska</a> </li>
+                                <li> <a href="/cart.php?a=complete&amp;language=turkish">Türkçe</a> </li>
+                                <li> <a href="/cart.php?a=complete&amp;language=ukranian">Українська</a> </li>
+                              </ul>
+                </div>
+              </li>
+                          <li> <a href="#" data-toggle="popover" id="accountNotifications" data-placement="bottom" data-original-title="" title=""> Notifications
+                <span class="label label-info">NEW</span> <b class="caret"></b> </a>
+                <div id="accountNotificationsContent" class="hidden">
+                  <ul class="client-alerts">
+                                <li> <a href="/clientarea.php?action=masspay&amp;all=true"> <i class="fa fa-fw fa-info-circle"></i>
+                      <div class="message">You have 1 unpaid invoice(s). Pay them early for peace of mind.</div>
+                      </a> </li>
+                              </ul>
+                </div>
+              </li>
+              <li class="primary-action"> <a href="/logout.php" class="btn"> Logout </a> </li>
+                        </ul>
+          </div>
+        </section>
+        <section id="main-menu">
+          <nav id="nav" class="navbar navbar-default navbar-main" role="navigation">
+            <div class="container"> 
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+              </div>
+              
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="primary-nav">
+                <ul class="nav navbar-nav">
+                      <li menuitemname="Home" class="" id="Primary_Navbar-Home">
+                <a href="/clientarea.php">
+                                Home
+                                        </a>
+                    </li>
+            <li menuitemname="Services" class="dropdown" id="Primary_Navbar-Services">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Services
+                                &nbsp;<b class="caret"></b>        </a>
+                            <ul class="dropdown-menu">
+                                    <li menuitemname="My Services" id="Primary_Navbar-Services-My_Services">
+                            <a href="/clientarea.php?action=services">
+                                                        My Services
+                                                    </a>
+                        </li>
+                                    <li menuitemname="Services Divider" class="nav-divider" id="Primary_Navbar-Services-Services_Divider">
+                            <a href="">
+                                                        -----
+                                                    </a>
+                        </li>
+                                    <li menuitemname="Order New Services" id="Primary_Navbar-Services-Order_New_Services">
+                            <a href="/cart.php">
+                                                        Order New Services
+                                                    </a>
+                        </li>
+                                    <li menuitemname="View Available Addons" id="Primary_Navbar-Services-View_Available_Addons">
+                            <a href="/cart.php?gid=addons">
+                                                        View Available Addons
+                                                    </a>
+                        </li>
+                                </ul>
+                    </li>
+            <li menuitemname="Domains" class="dropdown open" id="Primary_Navbar-Domains">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="true">
+                                Domains
+                                &nbsp;<b class="caret"></b>        </a>
+                            <ul class="dropdown-menu">
+                                    <li menuitemname="My Domains" id="Primary_Navbar-Domains-My_Domains">
+                            <a href="/clientarea.php?action=domains">
+                                                        My Domains
+                                                    </a>
+                        </li>
+                                    <li menuitemname="Domains Divider" class="nav-divider" id="Primary_Navbar-Domains-Domains_Divider">
+                            <a href="">
+                                                        -----
+                                                    </a>
+                        </li>
+                                    <li menuitemname="Renew Domains" id="Primary_Navbar-Domains-Renew_Domains">
+                            <a href="/cart.php?gid=renewals">
+                                                        Renew Domains
+                                                    </a>
+                        </li>
+                                    <li menuitemname="Register a New Domain" id="Primary_Navbar-Domains-Register_a_New_Domain">
+                            <a href="/cart.php?a=add&amp;domain=register">
+                                                        Register a New Domain
+                                                    </a>
+                        </li>
+                                    <li menuitemname="Transfer a Domain to Us" id="Primary_Navbar-Domains-Transfer_a_Domain_to_Us">
+                            <a href="/cart.php?a=add&amp;domain=transfer">
+                                                        Transfer Domains to Us
+                                                    </a>
+                        </li>
+                                    <li menuitemname="Domains Divider 2" class="nav-divider" id="Primary_Navbar-Domains-Domains_Divider_2">
+                            <a href="">
+                                                        -----
+                                                    </a>
+                        </li>
+                                    <li menuitemname="Domain Search" id="Primary_Navbar-Domains-Domain_Search">
+                            <a href="/domainchecker.php">
+                                                        Domain Search
+                                                    </a>
+                        </li>
+                                </ul>
+                    </li>
+            <li menuitemname="Billing" class="dropdown" id="Primary_Navbar-Billing">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Billing
+                                &nbsp;<b class="caret"></b>        </a>
+                            <ul class="dropdown-menu">
+                                    <li menuitemname="My Invoices" id="Primary_Navbar-Billing-My_Invoices">
+                            <a href="/clientarea.php?action=invoices">
+                                                        My Invoices
+                                                    </a>
+                        </li>
+                                    <li menuitemname="My Quotes" id="Primary_Navbar-Billing-My_Quotes">
+                            <a href="/clientarea.php?action=quotes">
+                                                        My Quotes
+                                                    </a>
+                        </li>
+                                    <li menuitemname="Billing Divider" class="nav-divider" id="Primary_Navbar-Billing-Billing_Divider">
+                            <a href="">
+                                                        -----
+                                                    </a>
+                        </li>
+                                    <li menuitemname="Mass Payment" id="Primary_Navbar-Billing-Mass_Payment">
+                            <a href="/clientarea.php?action=masspay&amp;all=true">
+                                                        Mass Payment
+                                                    </a>
+                        </li>
+                                </ul>
+                    </li>
+            <li menuitemname="Support" class="dropdown" id="Primary_Navbar-Support">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Support
+                                &nbsp;<b class="caret"></b>        </a>
+                            <ul class="dropdown-menu">
+                                    <li menuitemname="Tickets" id="Primary_Navbar-Support-Tickets">
+                            <a href="/supporttickets.php">
+                                                        Tickets
+                                                    </a>
+                        </li>
+                                    <li menuitemname="Announcements" id="Primary_Navbar-Support-Announcements">
+                            <a href="/index.php?rp=/announcements">
+                                                        Announcements
+                                                    </a>
+                        </li>
+                                    <li menuitemname="Knowledgebase" id="Primary_Navbar-Support-Knowledgebase">
+                            <a href="/index.php?rp=/knowledgebase">
+                                                        Knowledgebase
+                                                    </a>
+                        </li>
+                                    <li menuitemname="Downloads" id="Primary_Navbar-Support-Downloads">
+                            <a href="/index.php?rp=/download">
+                                                        Downloads
+                                                    </a>
+                        </li>
+                                    <li menuitemname="Network Status" id="Primary_Navbar-Support-Network_Status">
+                            <a href="/serverstatus.php">
+                                                        Network Status
+                                                    </a>
+                        </li>
+                                </ul>
+                    </li>
+            <li menuitemname="Open Ticket" class="" id="Primary_Navbar-Open_Ticket">
+                <a href="/submitticket.php">
+                                Open Ticket
+                                        </a>
+                    </li>
+        
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                      <li menuitemname="Account" class="dropdown account" id="Secondary_Navbar-Account">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Hello, Stephen!
+                                &nbsp;<b class="caret"></b>        </a>
+                            <ul class="dropdown-menu">
+                                    <li menuitemname="Edit Account Details" id="Secondary_Navbar-Account-Edit_Account_Details">
+                            <a href="/clientarea.php?action=details">
+                                                        Edit Account Details
+                                                    </a>
+                        </li>
+                                    <li menuitemname="Contacts/Sub-Accounts" id="Secondary_Navbar-Account-Contacts_Sub-Accounts">
+                            <a href="/clientarea.php?action=contacts">
+                                                        Contacts/Sub-Accounts
+                                                    </a>
+                        </li>
+                                    <li menuitemname="Change Password" id="Secondary_Navbar-Account-Change_Password">
+                            <a href="/clientarea.php?action=changepw">
+                                                        Change Password
+                                                    </a>
+                        </li>
+                                    <li menuitemname="Security Settings" id="Secondary_Navbar-Account-Security_Settings">
+                            <a href="/clientarea.php?action=security">
+                                                        Security Settings
+                                                    </a>
+                        </li>
+                                    <li menuitemname="Email History" id="Secondary_Navbar-Account-Email_History">
+                            <a href="/clientarea.php?action=emails">
+                                                        Email History
+                                                    </a>
+                        </li>
+                                    <li menuitemname="Divider" class="nav-divider" id="Secondary_Navbar-Account-Divider">
+                            <a href="">
+                                                        -----
+                                                    </a>
+                        </li>
+                                    <li menuitemname="Logout" id="Secondary_Navbar-Account-Logout">
+                            <a href="/logout.php">
+                                                        Logout
+                                                    </a>
+                        </li>
+                                </ul>
+                    </li>
+        
+                </ul>
+              </div>
+              <!-- /.navbar-collapse --> 
+            </div>
+          </nav>
+        </section>
+        
+            <div class="email-verification">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-2 col-xs-push-10 col-sm-1 col-sm-push-11">
+                            <button type="button" class="btn close"><span aria-hidden="true">×</span></button>
+                        </div>
+                        <div class="col-xs-10 col-xs-pull-2 col-sm-7 col-sm-pull-1 col-md-8">
+                            <i class="fa fa-warning"></i>
+                            <span class="text">Please check your email and follow the link to verify your email address.</span>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-3 col-sm-pull-1">
+                            <button id="btnResendVerificationEmail" class="btn btn-default btn-sm btn-block btn-resend-verify-email">
+                                Resend Verification Email
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        <section id="main-body">
+        <div class="container">
+        <div class="row">
+         
+        <!-- Container for main page display content -->
+        <div class="col-xs-12 main-content">
+         
+        
+        
+        <link rel="stylesheet" type="text/css" href="templates/orderforms/standard_cart/css/all.min.css?v=eeaa14">
+        <script type="text/javascript" src="templates/orderforms/standard_cart/js/scripts.min.js?v=eeaa14"></script>
+        
+        
+        <div id="order-standard_cart">
+        
+            <div class="row">
+        
+                <div class="pull-md-right col-md-9">
+        
+                    <div class="header-lined">
+                        <h1>Order Confirmation</h1>
+                    </div>
+        
+                </div>
+        
+                <div class="col-md-3 pull-md-left sidebar hidden-xs hidden-sm">
+        
+                        <div menuitemname="Categories" class="panel panel-sidebar">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                                            <i class="fa fa-shopping-cart"></i>&nbsp;
+                        
+                        Categories
+        
+                        
+                        <i class="fa fa-chevron-up panel-minimise pull-right"></i>
+                    </h3>
+                </div>
+        
+                
+                            <div class="list-group">
+                                                                    <a menuitemname="Shared Hosting" href="/cart.php?gid=1" class="list-group-item" id="Secondary_Sidebar-Categories-Shared_Hosting">
+                                    
+                                    Shared Hosting
+        
+                                                            </a>
+                                                                                        <a menuitemname="Domain Redemption Fee" href="/cart.php?gid=4" class="list-group-item" id="Secondary_Sidebar-Categories-Domain_Redemption_Fee">
+                                    
+                                    Domain Redemption Fee
+        
+                                                            </a>
+                                                                                        <a menuitemname="Addons" href="/cart.php?gid=addons" class="list-group-item" id="Secondary_Sidebar-Categories-Addons">
+                                    
+                                    Product Addons
+        
+                                                            </a>
+                                                        </div>
+                
+                    </div>
+        
+                <div menuitemname="Actions" class="panel panel-sidebar">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                                            <i class="fa fa-plus"></i>&nbsp;
+                        
+                        Actions
+        
+                        
+                        <i class="fa fa-chevron-up panel-minimise pull-right"></i>
+                    </h3>
+                </div>
+        
+                
+                            <div class="list-group">
+                                                                    <a menuitemname="Domain Renewals" href="/cart.php?gid=renewals" class="list-group-item" id="Secondary_Sidebar-Actions-Domain_Renewals">
+                                                                    <i class="fa fa-refresh fa-fw"></i>&nbsp;
+                                    
+                                    Domain Renewals
+        
+                                                            </a>
+                                                                                        <a menuitemname="Domain Registration" href="/cart.php?a=add&amp;domain=register" class="list-group-item" id="Secondary_Sidebar-Actions-Domain_Registration">
+                                                                    <i class="fa fa-globe fa-fw"></i>&nbsp;
+                                    
+                                    Register a New Domain
+        
+                                                            </a>
+                                                                                        <a menuitemname="Domain Transfer" href="/cart.php?a=add&amp;domain=transfer" class="list-group-item" id="Secondary_Sidebar-Actions-Domain_Transfer">
+                                                                    <i class="fa fa-share fa-fw"></i>&nbsp;
+                                    
+                                    Transfer in a Domain
+        
+                                                            </a>
+                                                                                        <a menuitemname="View Cart" href="/cart.php?a=view" class="list-group-item" id="Secondary_Sidebar-Actions-View_Cart">
+                                                                    <i class="fa fa-shopping-cart fa-fw"></i>&nbsp;
+                                    
+                                    View Cart
+        
+                                                            </a>
+                                                        </div>
+                
+                    </div>
+        
+            
+        
+                </div>
+        
+                <div class="col-md-9 pull-md-right">
+        
+                    <div class="categories-collapsed visible-xs visible-sm clearfix">
+        
+            <div class="pull-left form-inline">
+                <form method="get" action="/cart.php">
+                    <select name="gid" onchange="submit()" class="form-control">
+                        <optgroup label="Product Categories">
+                                                    <option value="1">Shared Hosting</option>
+                                                    <option value="4">Domain Redemption Fee</option>
+                                            </optgroup>
+                        <optgroup label="Actions">
+                                                    <option value="addons">Product Addons</option>
+                                                            <option value="renewals">Domain Renewals</option>
+                                                                                                <option value="registerdomain">Register a New Domain</option>
+                                                                        <option value="transferdomain">Transfer in a Domain</option>
+                                                <option value="viewcart">View Cart</option>
+                        </optgroup>
+                    </select>
+                </form>
+            </div>
+        
+            
+        </div>
+        
+        
+                    <p>Thank you for your order. You will receive a confirmation email shortly.</p>
+        
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2">
+                            <div class="alert alert-info order-confirmation">
+                                Your Order Number is: <span>7934144422</span>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <p>If you have any questions about your order, please open a support ticket from your client area and quote your order number.</p>
+        
+                    
+                    
+                                    <!-- Enter any HTML code which should be displayed when a user has completed checkout here -->
+                        <!-- Common uses of this include conversion and affiliate tracking scripts -->
+                    
+                    <div class="text-center">
+                        <a href="clientarea.php" class="btn btn-default">
+                            Continue To Client Area
+                            &nbsp;<i class="fa fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        </div>
+        <!-- /.main-content --> 
+        <div class="clearfix"></div>
+        </div>
+        </div>
+        </section>
+        </div>
+        <div class="clear"></div>
+        <!--wrapper-->
+        </div>
+        <!--grey_con-->
+        </div>
+        <!--main_contentbox-->
+        </div>
+        <div class="main_footerbox">
+          
+          <div class="footer_con">
+            <div class="wrapper">
+              <div class="footer_box">
+                <div class="sitemap">
+                  <h5>Network Solutions</h5>
+                  <ul>
+                    <li><a href="/domainchecker.php">Domain Names</a></li>
+                    <li><a href="/sharedhosting.php">Shared Hosting</a></li>
+                   <!-- <li><a href="/resellerhosting.php">Reseller Hosting</a></li> -->
+                   <!-- <li><a href="/cloudhosting.php">Cloud Hosting</a></li> -->
+                 <!--   <li><a href="/vpshosting.php">VPS Hosting</a></li> -->
+                   <!-- <li><a href="/dedicatedhosting.php">DedicatedHosting</a></li> -->
+                  </ul>
+                  <!--sitemap--> 
+                </div>
+                <div class="sitemap">
+                  <h5>Hosting Solutions</h5>
+                  <ul>
+                    <li><a href="/domainchecker.php">Domain Names</a></li>
+                    <li><a href="/sharedhosting.php">Shared Hosting</a></li>
+                  <!--  <li><a href="/resellerhosting.php">Reseller Hosting</a></li> -->
+                   <!-- <li><a href="/cloudhosting.php">Cloud Hosting</a></li> -->
+                   <!-- <li><a href="/vpshosting.php">VPS Hosting</a></li> -->
+                   <!-- <li><a href="/dedicatedhosting.php">DedicatedHosting</a></li> -->
+                  </ul>
+                  <!--sitemap--> 
+                </div>
+                <div class="sitemap">
+                  <h5>Other Services</h5>
+                  <ul>
+                    <li><a href="">Internet Services</a></li>
+                    <li><a href="">Ecommerce</a></li>
+                    <li><a href="">Safaricom Fiber</a></li>
+                    <li><a href="">Elearning</a></li>
+                   <!-- <li><a href="/vpshosting.php">VPS Hosting</a></li> -->
+                   <!-- <li><a href="/dedicatedhosting.php">DedicatedHosting</a></li> -->
+                  </ul>
+                  <!--sitemap--> 
+                </div>
+                <div class="sitemap sitemap2">
+                  <h5>Legal</h5>
+                  <ul>
+                    <li><a href="/terms.php">Terms of Service</a></li>
+                    <li><a href="/privacy.php">Privacy Policy</a></li>
+                    <li><a href="/contact.php">Report Abuse</a></li>
+                    <li><a href="/contact.php">D.M.C.A Takedowns</a></li>
+                  </ul>
+                  <!--sitemap--> 
+                </div>
+                <div class="mailing_box">
+                  
+                  <h5><img src="/templates/safaricom/html/images/logo.png" alt=""></h5>
+                  <p>Safaricom House, Waiyaki Way<br>
+                    Nairobi, Kenya</p>
+                  <br>
+                  
+                </div>
+                <div class="follow_us">
+                  <ul>
+                    <li class="social_icon1"><a href="http://www.facebook.com/SafaricomLtd/" target="_blank"></a></li>
+                    <li class="social_icon2"><a href="http://www.linkedin.com" target="_blank"></a></li>
+                    <li class="social_icon3"><a href="http://www.google.com/plus" target="_blank"></a></li>
+                  </ul>
+                  <!--follow_us--> 
+                </div>
+                <!--footer_box--> 
+              </div>
+              <div class="copyright">Copyright © 2019 - <a href="http://www.safaricom.com">Safaricom</a> - All Rights Reserved.</div>
+              <div class="clear"></div>
+              <!--wrapper--> 
+            </div>
+            <!--footer_con--> 
+          </div>
+          <!--main_footerbox--> 
+        </div>
+        <div class="modal system-modal fade" id="modalAjax" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content panel panel-primary">
+              <div class="modal-header panel-heading">
+                <button type="button" class="close" data-dismiss="modal"> <span aria-hidden="true">×</span> <span class="sr-only">Close</span> </button>
+                <h4 class="modal-title">Title</h4>
+              </div>
+              <div class="modal-body panel-body"> Loading... </div>
+              <div class="modal-footer panel-footer">
+                <div class="pull-left loader"> <i class="fa fa-circle-o-notch fa-spin"></i> Loading... </div>
+                <button type="button" class="btn btn-default" data-dismiss="modal"> Close </button>
+                <button type="button" class="btn btn-primary modal-submit"> Submit </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        </body></html>

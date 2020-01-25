@@ -1,0 +1,10 @@
+@relation stock
+
+@attribute percent_change_since_open real
+@attribute percent_change_from_day_low real
+@attribute percent_change_from_day_high real
+@attribute action {buy, sell, hold}
+
+@data
+0.21,0.05,-0.2,sell
+

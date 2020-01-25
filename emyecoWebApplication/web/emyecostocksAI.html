@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<head>
+        <title>Stocks Market | Emye Co AI</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery.1.9.1.min.js"></script>
+        
+        <link href="bootstrap/css/bootstrap.css" type="text/css" rel="stylesheet" />
+
+        <script src="emyecoAIprediction.js"></script>
+
+        <style>
+                input[type=text]:focus {
+        border: 3px solid #555;
+    }
+    .error{
+        color: red;
+    }
+    body {
+        background-image: url("iisstart.png");
+        background-repeat: repeat-x;
+    }
+    a:link {
+        color: rgb(5, 8, 5);
+        background-color: transparent;
+        text-decoration: none;
+    }
+    a:visited {
+        color: pink;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    a:hover {
+        color: rgb(47, 13, 13);
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+       overflow: hidden;
+       background-color: #333;
+    }
+
+    li {
+       float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    .active {
+       background-color: #4CAF50;
+    }
+</style>
+
+<style type="text/css">
+body {
+	color:#000000;
+	background-color:#0072C6;
+	margin:0;
+}
+
+#container {
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	}
+
+a img {
+	border:none;
+}
+
+</style>
+<style>
+  table {
+      border-collapse: collapse;
+      width: 100%;
+  }
+  th {
+    background-color: #4CAF50;
+    color: white;
+}
+  
+  th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+  }
+  
+  tr:hover{background-color:#f5f5f5}
+  tr:nth-child(){background-color: #f2f2f2}
+
+</style>
+    </head>
+
+    
+    <body id="container">
+        <div><strong>Emye Co Stocks AI</strong> 
+        
+        <h1>AI Stocks Predictions</h1>
+        
+
+        <div>
+
+        <h2>Market Stocks</h2>
+       
+      
+        <table>
+            <tr>
+                <td>
+                    symbol<input class="span4" id="symbol" name="symbol" type="text" placeholder="SNAP">                    
+                </td>
+                <td>
+                    name<input class="span4" id="name" name="name" type="text" placeholder="Snap Inc">                    
+                </td>
+                <td>
+                    currency<input class="span4" id="currency" name="currency" type="text" placeholder="USD">                    
+                </td>
+                <td>
+                    price<input class="span4" id="price" name="price" type="text" placeholder="19.05">                    
+                </td>
+                <td>
+                    price open<input class="span4" id="price_open" name="price_open" type="text" placeholder="19.71">                    
+                </td>
+                <td>
+                    day high<input class="span4" id="day_high" name="day_high" type="text" placeholder="19.76">                    
+                </td>
+                <td>
+                    day low<input class="span4" id="day_low" name="day_low" type="text" placeholder="18.84">                    
+                </td>
+                <td>
+                    52 week high<input class="span4" id="week_high" name="week_high" type="text" placeholder="19.76">                    
+                </td>
+                <td>
+                    52 week low<input class="span4" id="week_low" name="week_low" type="text" placeholder="6.20">                    
+                </td>
+                <td>
+                    day change<input class="span4" id="day_change" name="day_change" type="text" placeholder="-0.20">                    
+                </td>
+                <td>
+                    change pct<input class="span4" id="change_pct" name="change_pct" type="text" placeholder="-1.04">                    
+                </td>
+                <td>
+                    close yesterday<input class="span4" id="close_yesterday" name="close_yesterday" type="text" placeholder="19.25">                    
+                </td>
+                <td>
+                    market cap<input class="span4" id="market_cap" name="market_cap" type="text" placeholder="26669428736">                    
+                </td>
+                <td>
+                    volume<input class="span4" id="volume" name="volume" type="text" placeholder="32717002">                    
+                </td>
+                <td>
+                    volume avg<input class="span4" id="volume_avg" name="volume_avg" type="text" placeholder="27873528">                    
+                </td>
+                <td>
+                    shares<input class="span4" id="shares" name="shares" type="text" placeholder="1138349952">                    
+                </td>
+                <td>
+                    stock exchange long<input class="span4" id="stock_exchange_long" name="stock_exchange_long" type="text" placeholder="New York Stock Exchange">                    
+                </td>
+                <td>
+                    stock exchange short<input class="span4" id="stock_exchange_short" name="stock_exchange_short" type="text" placeholder="NYSE">                    
+                </td>                
+                <td>
+                    timezone<input class="span4" id="timezone" name="timezone" type="text" placeholder="EST">                    
+                </td>
+                <td>
+                    timezone name<input class="span4" id="timezone_name" name="timezone_name" type="text" placeholder="America/New_York">                    
+                </td>
+                <td>
+                    gmt offset<input class="span4" id="gmt_offset" name="gmt_offset" type="text" placeholder="-18000">                    
+                </td>
+                <td>
+                    last trade time<input class="span4" id="last_trade_time" name="last_trade_time" type="text" placeholder="2020-01-24 16:03:40">                    
+                </td>
+                <td>
+                    pe<input class="span4" id="pe" name="pe" type="text" placeholder="N/A">                    
+                </td>
+                <td>
+                    eps<input class="span4" id="eps" name="eps" type="text" placeholder="-0.72">                    
+                </td>
+                
+                
+                
+                
+                <td>
+                    <button class="btn btn-primary" type="button" onclick="emyecoAIprediction()">Check</button>                    
+                </td>
+            </tr>
+        </table>
+        
+        </div>
+        <!-- display all articles -->
+	<div style="width:700px;padding:20px;S">
+		<h5 style="text-align:center">
+			<i style="color:#ccc"><small>AI stock</small></i>
+		</h5>
+	
+		<table id="added-articles" class="table">
+			<tr>
+				<th>symbol</th>
+				<th>name</th>
+                                <th>currency</th>
+				<th>price</th>
+				<th>price open</th>
+                                <th>day high</th>
+				<th>day low</th>
+				<th>52 week high</th>
+                                <th>52 week low</th>
+				<th>day change</th>
+				<th>change pct</th>
+                                <th>close yesterday</th>
+				<th>market cap</th>
+				<th>volume</th>
+                                <th>volume avg</th>
+				<th>shares</th>
+				<th>stock exchange long</th>
+                                <th>stock exchange short</th>
+				<th>time zone</th>
+				<th>time zone name</th>
+                                <th>gmt offset</th>
+				<th>last trade time</th>
+				<th>pe</th>
+				<th>eps</th>
+                                <th>Option</th>
+                                <th><strong>AI Option</strong></th>
+			</tr>
+		</table>
+	</div>
+        
+        </div>  
+                
+   <!--             
+                <td>
+                    <input class="span4" id="symbol" name="symbol" type="text" placeholder="SNAP">
+                    <input list="currencies" type="text" name="currency" placeholder="Currency">
+                    <datalist id="currencies">
+                        <option value="NIRR">
+                        <option value="USD">
+                        <option value="KSh">
+                    </datalist>
+                </td>
+                
+                
+                <td><input list="currencies2" type="text"  name="currency2" placeholder="Select Currencies">
+            <datalist id="currencies2">
+          <option value="KSh">
+          <option value="USD">
+          <option value="NIRR">
+            </datalist>
+        </td>
+      
+        <td><input type="text" name="buy" placeholder="Buying Price "> </td>
+        <td><input type="text" name="static_price" placeholder="Static Price "></td>
+        <td><input type="text" name="sell" placeholder="Selliing Price "></td>
+        <td><input list="your_predictions" id="options" onkeyup="myFunction()" type="text" name="your_prediction" placeholder="option">
+            <datalist id="your_predictions">
+          <option value="hold">
+          <option value="buy">
+          <option value="sell">
+            </datalist>
+            <script>
+             function myFunction() {
+             var x = document.getElementById("options");
+             x.value = x.value.toLowerCase();
+             }
+            </script>
+           
+        </td>
+        
+        <td><button type="submit" name="submit" >AI option</button>
+        </td>
+        
+        <td ><b><output id="result" style="color: aqua" ></output></b></td>
+        
+        -->
+
+    
+    
+ 
+
+
+    
+   
+        
+             
+ 
+        
+        
+        
+    </body>
+</html>
